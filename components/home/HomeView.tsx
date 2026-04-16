@@ -40,38 +40,64 @@ export async function HomeView() {
         </SectionContainer>
       </section>
 
-      <section data-header-theme="brown" className="py-20 sm:py-24">
-        <SectionContainer className="grid grid-cols-1 gap-8 sm:gap-10 lg:grid-cols-3 lg:items-stretch lg:gap-5 xl:gap-6">
-          <div className="order-1 flex min-w-0 w-full flex-col lg:min-h-0">
-            <div className="mx-auto w-[80%] min-w-0">
+      <section data-header-theme="brown" className="bg-cream py-16 sm:py-20 lg:py-24">
+        <SectionContainer>
+          <div className="grid w-full grid-cols-1 items-start gap-12 sm:gap-14 lg:grid-cols-3 lg:gap-12 xl:gap-16 2xl:gap-20">
+            <div className="order-1 min-w-0 lg:order-1">
               <ExperienceGalleryImage
-                src="/images/img-1.png"
-                alt={t("experience.imageAlt")}
-                caption={t("experience.captionLeft")}
+                variant="panel"
+                src="/images/img-7.png"
+                alt={t("highlightFlip.imageLeftAlt")}
+                caption={t("highlightFlip.captionLeft")}
               />
             </div>
-          </div>
 
-          <div className="order-2 flex min-w-0 w-full flex-col items-center justify-center space-y-5 py-2 text-center lg:order-2 lg:min-h-0 lg:self-stretch lg:py-0">
-            <h2 className="max-w-lg font-sans text-3xl tracking-wide text-[rgba(51,51,48,1)] sm:text-[32px]">
-              {t("experience.title")}
-            </h2>
-            <Divider className="mx-auto w-full max-w-md" />
-            <p className="max-w-md text-base leading-relaxed text-warm-brown sm:text-lg">
-              {t("experience.body")}
-            </p>
-          </div>
-
-          <div className="order-3 flex min-w-0 w-full flex-col items-stretch lg:min-h-0">
-            <div className="mx-auto w-[80%] min-w-0">
+            <div className="order-2 min-w-0 lg:order-2">
               <ExperienceGalleryImage
-                src="/images/img-2.png"
-                alt={t("experience.imageAlt2")}
-                caption={t("experience.captionRight")}
+                variant="panel"
+                src="/images/img-8.png"
+                alt={t("highlightFlip.imageMidAlt")}
+                caption={t("highlightFlip.captionMid")}
               />
             </div>
+
+            <SectionEnter className="order-3 flex max-w-lg flex-col gap-6 text-left lg:order-3 lg:max-w-none lg:pl-4">
+              <h3 className="text-[18px] font-bold uppercase leading-relaxed tracking-normal text-steel-grey">
+                {t("highlightFlip.eyebrow")}
+              </h3>
+              <p className="max-w-md text-base leading-relaxed text-warm-brown sm:text-lg">
+                {t("highlightFlip.body")}
+              </p>
+              <Link
+                href="/about"
+                className="mt-1 w-fit text-[10px] font-semibold uppercase tracking-[0.2em] text-steel-grey underline decoration-steel-grey/55 underline-offset-[7px] transition-colors hover:text-dark-slate hover:decoration-dark-slate/45 sm:text-[11px]"
+              >
+                {t("highlightFlip.discover")}
+              </Link>
+            </SectionEnter>
           </div>
         </SectionContainer>
+      </section>
+
+      <section
+        data-header-theme="brown"
+        className="grid h-dvh w-full grid-cols-2 gap-0 overflow-hidden"
+        aria-label={t("splitScreen.ariaLabel")}
+      >
+        <EditorialCoverImage
+          className="h-full w-full"
+          src="/images/img-5.png"
+          alt={t("splitScreen.imageLeftAlt")}
+          caption={t("splitScreen.captionLeft")}
+          sizes="50vw"
+        />
+        <EditorialCoverImage
+          className="h-full w-full"
+          src="/images/img-6.png"
+          alt={t("splitScreen.imageRightAlt")}
+          caption={t("splitScreen.captionRight")}
+          sizes="50vw"
+        />
       </section>
 
       <section data-header-theme="brown" className="bg-cream py-16 sm:py-20 lg:py-24">
@@ -113,78 +139,17 @@ export async function HomeView() {
         </SectionContainer>
       </section>
 
-      <section
-        data-header-theme="brown"
-        className="grid h-dvh w-full grid-cols-2 gap-0 overflow-hidden"
-        aria-label={t("splitScreen.ariaLabel")}
-      >
-        <EditorialCoverImage
-          className="h-full w-full"
-          src="/images/img-5.png"
-          alt={t("splitScreen.imageLeftAlt")}
-          caption={t("splitScreen.captionLeft")}
-          sizes="50vw"
-        />
-        <EditorialCoverImage
-          className="h-full w-full"
-          src="/images/img-6.png"
-          alt={t("splitScreen.imageRightAlt")}
-          caption={t("splitScreen.captionRight")}
-          sizes="50vw"
-        />
-      </section>
-
-      <section data-header-theme="brown" className="bg-cream py-16 sm:py-20 lg:py-24">
-        <SectionContainer>
-          <div className="grid w-full grid-cols-1 items-start gap-12 sm:gap-14 lg:grid-cols-3 lg:gap-12 xl:gap-16 2xl:gap-20">
-            <div className="order-1 min-w-0 lg:order-1">
-              <ExperienceGalleryImage
-                variant="panel"
-                src="/images/img-7.png"
-                alt={t("highlightFlip.imageLeftAlt")}
-                caption={t("highlightFlip.captionLeft")}
-              />
-            </div>
-
-            <div className="order-2 min-w-0 lg:order-2">
-              <ExperienceGalleryImage
-                variant="panel"
-                src="/images/img-8.png"
-                alt={t("highlightFlip.imageMidAlt")}
-                caption={t("highlightFlip.captionMid")}
-              />
-            </div>
-
-            <SectionEnter className="order-3 flex max-w-lg flex-col gap-6 text-left lg:order-3 lg:max-w-none lg:pl-4">
-              <h3 className="text-[18px] font-bold uppercase leading-relaxed tracking-normal text-steel-grey">
-                {t("highlightFlip.eyebrow")}
-              </h3>
-              <p className="max-w-md text-base leading-relaxed text-warm-brown sm:text-lg">
-                {t("highlightFlip.body")}
-              </p>
-              <Link
-                href="/about"
-                className="mt-1 w-fit text-[10px] font-semibold uppercase tracking-[0.2em] text-steel-grey underline decoration-steel-grey/55 underline-offset-[7px] transition-colors hover:text-dark-slate hover:decoration-dark-slate/45 sm:text-[11px]"
-              >
-                {t("highlightFlip.discover")}
-              </Link>
-            </SectionEnter>
-          </div>
-        </SectionContainer>
-      </section>
-
-      <section data-header-theme="dapietro" className="bg-dark-slate py-20 text-cream sm:py-24">
+      <section data-header-theme="brown" className="bg-neutral-200 py-20 text-[#171717] sm:py-24">
         <SectionContainer className="flex flex-col items-start gap-6 sm:flex-row sm:items-center sm:justify-between">
           <SectionEnter className="min-w-0 space-y-3">
-            <h2 className="font-display text-3xl tracking-wide sm:text-4xl">{t("cta.title")}</h2>
-            <p className="text-sm leading-relaxed text-cream/85 sm:text-base">{t("cta.body")}</p>
+            <h2 className="font-display text-3xl tracking-wide text-[#171717] sm:text-4xl">{t("cta.title")}</h2>
+            <p className="text-sm leading-relaxed text-[#171717] sm:text-base">{t("cta.body")}</p>
           </SectionEnter>
           <div className="w-full shrink-0 sm:w-auto">
             <WhatsAppButton
               labelNamespace="Home.cta"
               labelKey="button"
-              className="border-cream/30 bg-cream text-dark-slate hover:bg-white sm:min-w-[12rem]"
-              fullWidth
+              textLink
             />
           </div>
         </SectionContainer>

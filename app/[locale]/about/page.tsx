@@ -1,4 +1,5 @@
 import { HeroSection } from "@/components/home/HeroSection";
+import { ExperienceSection } from "@/components/home/ExperienceSection";
 import { SectionContainer } from "@/components/layout/SectionContainer";
 import { Divider } from "@/components/layout/Divider";
 import { RevealText } from "@/components/reveal/RevealText";
@@ -28,6 +29,8 @@ export default async function AboutPage() {
           </div>
         }
       />
+
+      <ExperienceSection />
 
       <div className="bg-cream pb-24 pt-10 sm:pt-14">
         <SectionContainer className="space-y-12">
