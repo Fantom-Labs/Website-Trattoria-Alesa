@@ -1,0 +1,177 @@
+{
+  "Meta": {
+    "title": "Trattoria Alesa — Trattoria italiana ad Hochzoll, Augusta",
+    "description": "Calore italiano ad Augusta: ingredienti freschi, ricette di famiglia, e l’abbraccio quieto di una tavola come a casa della Nonna."
+  },
+  "Skip": { "toContent": "Vai al contenuto principale" },
+  "NotFound": {
+    "title": "Pagina non trovata",
+    "body": "La pagina che cerchi non esiste o è stata spostata.",
+    "home": "Torna alla home"
+  },
+  "Splash": {
+    "title": "Trattoria Alesa",
+    "subtitle": "Hochzoll, Augusta — un soggiorno italiano, lontano dal rumore."
+  },
+  "Nav": {
+    "brand": "Trattoria Alesa",
+    "home": "Home",
+    "about": "Chi siamo",
+    "menu": "Menu",
+    "contact": "Contatti",
+    "reserve": "Prenota un tavolo",
+    "booking": "Prenotazione",
+    "instagram": "Instagram",
+    "logoAlt": "Trattoria Alesa — logo",
+    "primaryNav": "Navigazione principale",
+    "openMenu": "Apri menu",
+    "closeMenu": "Chiudi menu",
+    "menuTitle": "Menu del sito",
+    "chooseLanguage": "Lingua",
+    "whatsappFloater": "Scrivici su WhatsApp"
+  },
+  "Footer": {
+    "brand": "Trattoria Alesa",
+    "tagline": "Un soggiorno italiano in Germania — piatti semplici, sapori sinceri.",
+    "visit": "Dove siamo",
+    "address": "Hochzoll, Augusta — Germania",
+    "hoursTitle": "Orari",
+    "hours": "Mar–Dom 11:30–14:30 · 17:30–22:30\nLunedì chiuso",
+    "connect": "Contatti",
+    "contactLink": "Contatti e indicazioni",
+    "reserveLink": "Prenotazioni",
+    "instagram": "Instagram",
+    "legal": "© {year} Trattoria Alesa. Tutti i diritti riservati."
+  },
+  "Home": {
+    "hero": {
+      "eyebrow": "Hochzoll, Augusta",
+      "title": "Come da Nonna — qui.",
+      "subtitle": "Salse che hanno preso tempo, pane che profuma di domenica, e un locale che non ti corre addosso.",
+      "ctaPrimary": "Prenota su WhatsApp",
+      "ctaSecondary": "Vai al menu",
+      "mediaAlt": "Luce calda su una ciotola di pasta e ingredienti freschi."
+    },
+    "intro": {
+      "body": "In Trattoria Alesa Gelati plasmiamo la vostra esperienza gastronomica con calore, tradizione e cura autentica. La nostra cucina lavora con ingredienti freschi e scelti con attenzione, seguendo ricette tramandate di generazione in generazione. Qui a Hochzoll, ogni piatto porta un pezzo d’Italia ad Augusta, creando un luogo dove residenti e ospiti si incontrano."
+    },
+    "experience": {
+      "title": "Tradizione che si assaggia",
+      "body": "L’impasto riposa, il ragù mormora, e in cucina regna la calma. Non è spettacolo — è cura. Siediti, bevi un sorso d’acqua, lascia che la serata si allunghi.",
+      "imageAlt": "Piatto in trattoria — equilibrio di colore, consistenza e sapore.",
+      "imageAlt2": "Pasta fresca e dettaglio di cucina — tradizione nel piatto.",
+      "captionLeft": " / Colore, consistenza, sapore — in equilibrio silenzioso. / ",
+      "captionRight": " / Tradizione nel piatto — calore in ogni filo. / "
+    },
+    "highlight": {
+      "eyebrow": "Trattoria & tavola",
+      "body": "Pasta tirata a mano, pizza dal forno a legna e la calma di una cucina che non ha fretta. Avvicina la sedia — abbiamo tenuto un posto per te in sala.",
+      "discover": "+ scopri di più +",
+      "imageMidAlt": "Bicchieri alzati sul tavolo — un brindisi nella luce morbida.",
+      "imageRightAlt": "Interno della sala — tavola apparecchiata, atmosfera tranquilla.",
+      "captionMid": " / Un pranzo da lasciare scorrere — calice, lino, tempo. / ",
+      "captionRight": " / La nostra sala nel tardo pomeriggio — semplice, calda, sincera. / "
+    },
+    "highlightFlip": {
+      "eyebrow": "Dal pass di cucina",
+      "body": "Olio che si scalda in padella, erbe tritate fini e impasto che riposa sotto il canovaccio. Cuciniamo per il quartiere — non per gli applausi — la sala deve odorare di domenica, anche di martedì.",
+      "discover": "+ la nostra storia +",
+      "imageLeftAlt": "Mani al lavoro — preparazione sul marmo.",
+      "imageMidAlt": "Vapore che sale dal piatto — conforto in movimento.",
+      "captionLeft": " / Coltelli silenziosi, taglieri fermi — il giorno inizia con onestà. / ",
+      "captionMid": " / Calore, vapore, il primo cucchiaio di pazienza. / "
+    },
+    "splitScreen": {
+      "ariaLabel": "Due fotografie a tutto schermo affiancate",
+      "imageLeftAlt": "Atmosfera in sala — metà sinistra della vista.",
+      "imageRightAlt": "Tavolo e dettagli — metà destra della vista.",
+      "captionLeft": " / Luce, lino, la sala che si apre a sinistra. / ",
+      "captionRight": " / Bicchieri, piatti, la sera che prende ritmo. / "
+    },
+    "reviews": {
+      "title": "Qualche voce dalla sala",
+      "items": {
+        "0": {
+          "quote": "Davvero italiano — caldo, schietto. Torneremo presto.",
+          "name": "Ospite",
+          "role": "Hochzoll, Augusta",
+          "avatarAlt": "Ritratto di un ospite sorridente"
+        },
+        "1": {
+          "quote": "Pizza sottile e ariosa, condimento generoso — proprio così.",
+          "name": "Ospite",
+          "role": "Hochzoll, Augusta",
+          "avatarAlt": "Ritratto di un ospite al tavolo"
+        },
+        "2": {
+          "quote": "Servizio gentilissimo, atmosfera tranquilla — usciti sazi e contenti.",
+          "name": "Ospite",
+          "role": "Hochzoll, Augusta",
+          "avatarAlt": "Ritratto di un ospite in luce morbida"
+        }
+      }
+    },
+    "cta": {
+      "title": "Blocca un tavolo con un messaggio",
+      "body": "Scrivici giorno, orario e quante persone — rispondiamo su WhatsApp appena riusciamo a staccarci dai fornelli.",
+      "button": "Apri WhatsApp"
+    }
+  },
+  "About": {
+    "hero": {
+      "mediaAlt": "Scena conviviale calda in Trattoria Alesa — lo stesso spirito del nostro tavolo di casa."
+    },
+    "title": "La nostra storia",
+    "lede": "Abbiamo aperto la Trattoria Alesa come un salotto per chi sente la mancanza del cucchiaio sul pentolino — e di un tavolo che non fa fretta.",
+    "storyTitle": "Dalla tavola di famiglia",
+    "storyBody": "Le ricette hanno attraversato confini — sui quaderni, a memoria, con piccole discussioni affettuose. Qui a Hochzoll le teniamo oneste: meno ingredienti, più attenzione.",
+    "philosophyTitle": "Filosofia",
+    "philosophyBody": "Materie prime fresche, cotture rispettose, porzioni giuste. Non inseguiamo titoli — serviamo vicinanza.",
+    "nonnaTitle": "Lo spirito della Nonna",
+    "nonnaBody": "La cucina della Nonna non era marketing — era la sedia avvicinata, il tovagliolo sulle ginocchia, e il cibo che ti faceva sciogliere le spalle. È quella sensazione che custodiamo.",
+    "closing": "Calore italiano ad Augusta — senza teatro, solo convivialità."
+  },
+  "Menu": {
+    "title": "Menu",
+    "intro": "Un assaggio di ciò che ci piace fare. I cambi di stagione arrivano piano — chiedi in sala.",
+    "pastaTitle": "Pasta",
+    "pizzaTitle": "Pizza",
+    "specialsTitle": "Specialità",
+    "pasta": {
+      "0": { "name": "Tagliatelle al ragù", "desc": "Ragù di manzo lento, Parmigiano, erbe fini.", "price": "€ 16,50" },
+      "1": { "name": "Spaghetti aglio, olio & peperoncino", "desc": "Aglio, olio, peperoncino misurato — chiaro e vero.", "price": "€ 12,90" },
+      "2": { "name": "Tortellini in brodo", "desc": "Cappelletti in brodo dorato — abbraccio in ciotola.", "price": "€ 14,50" }
+    },
+    "pizza": {
+      "0": { "name": "Margherita", "desc": "Pomodoro San Marzano, fior di latte, basilico, olio.", "price": "€ 11,50" },
+      "1": { "name": "Prosciutto e rucola", "desc": "Prosciutto, rucola, Parmigiano a lamelle dopo la cottura.", "price": "€ 15,50" },
+      "2": { "name": "Funghi", "desc": "Funghi arrostiti, timo, mozzarella — profumo di bosco.", "price": "€ 14,50" }
+    },
+    "specials": {
+      "0": { "name": "Saltimbocca alla romana", "desc": "Vitello, salvia, prosciutto — con verdure di stagione.", "price": "€ 22,00" },
+      "1": { "name": "Branzino al forno", "desc": "Branzino intero, limone, erbe — quando il pesce è giusto.", "price": "Mercato" },
+      "2": { "name": "Panna cotta", "desc": "Vaniglia, frutta di stagione — finale setoso e leggero.", "price": "€ 7,50" }
+    }
+  },
+  "Contact": {
+    "title": "Contatti",
+    "intro": "Siamo facili da trovare a Hochzoll — scrivi, chiamaci, oppure passa quando siamo aperti.",
+    "addressLabel": "Indirizzo",
+    "addressLines": "Trattoria Alesa\nExemplestraße 12\n86163 Augusta",
+    "phoneLabel": "Telefono",
+    "phone": "+49 821 000 00 00",
+    "emailLabel": "Email",
+    "email": "hello@trattoria-alesa.example",
+    "hoursLabel": "Orari",
+    "hours": "Mar–Dom 11:30–14:30 · 17:30–22:30\nLunedì chiuso",
+    "note": "Per prenotare, WhatsApp è la via più rapida — così la linea resta libera per chi è in sala."
+  },
+  "Reservations": {
+    "title": "Prenotazioni",
+    "body": "Mandaci un WhatsApp con data, orario e numero di persone. Confermiamo a mano — niente moduli, niente giri strani.",
+    "button": "Scrivici su WhatsApp",
+    "secondary": "Preferisci chiamare? Trovi tutto nella pagina contatti.",
+    "contactLink": "Dettagli contatto",
+    "whatsappPrefill": "Buongiorno, vorrei prenotare un tavolo."
+  }
+}

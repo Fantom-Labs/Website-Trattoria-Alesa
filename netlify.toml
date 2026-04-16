@@ -1,0 +1,8 @@
+# Netlify: Next.js App Router — plugin wires the server runtime.
+# Set NEXT_PUBLIC_WHATSAPP_E164 and NEXT_PUBLIC_INSTAGRAM_URL in Site env.
+
+[build]
+  command = "npm run build"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"

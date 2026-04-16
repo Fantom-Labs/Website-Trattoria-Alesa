@@ -1,0 +1,177 @@
+{
+  "Meta": {
+    "title": "Trattoria Alesa — Italienische Trattoria in Hochzoll, Augsburg",
+    "description": "Italienische Wärme in Augsburg-Hochzoll: frische Zutaten, Familienrezepte und das Gefühl von Nonnas Küche — ruhig, ehrlich, einladend."
+  },
+  "Skip": { "toContent": "Zum Inhalt springen" },
+  "NotFound": {
+    "title": "Seite nicht gefunden",
+    "body": "Diese Seite gibt es nicht oder wurde verschoben.",
+    "home": "Zur Startseite"
+  },
+  "Splash": {
+    "title": "Trattoria Alesa",
+    "subtitle": "Hochzoll, Augsburg — wie ein kleines italienisches Wohnzimmer."
+  },
+  "Nav": {
+    "brand": "Trattoria Alesa",
+    "home": "Start",
+    "about": "Über uns",
+    "menu": "Speisekarte",
+    "contact": "Kontakt",
+    "reserve": "Tisch reservieren",
+    "booking": "Reservierung",
+    "instagram": "Instagram",
+    "logoAlt": "Trattoria Alesa — Logo",
+    "primaryNav": "Hauptnavigation",
+    "openMenu": "Menü öffnen",
+    "closeMenu": "Menü schließen",
+    "menuTitle": "Seitenmenü",
+    "chooseLanguage": "Sprache",
+    "whatsappFloater": "WhatsApp-Chat öffnen"
+  },
+  "Footer": {
+    "brand": "Trattoria Alesa",
+    "tagline": "Ein italienisches Wohnzimmer in Deutschland — schlichte Teller, ehrliche Aromen.",
+    "visit": "Besuch",
+    "address": "Hochzoll, Augsburg — Deutschland",
+    "hoursTitle": "Öffnungszeiten",
+    "hours": "Di–So 11:30–14:30 · 17:30–22:30\nMontag Ruhetag",
+    "connect": "Kontakt",
+    "contactLink": "Kontakt & Anfahrt",
+    "reserveLink": "Reservierungen",
+    "instagram": "Instagram",
+    "legal": "© {year} Trattoria Alesa. Alle Rechte vorbehalten."
+  },
+  "Home": {
+    "hero": {
+      "eyebrow": "Hochzoll, Augsburg",
+      "title": "Wie bei Nonna — nur bei uns.",
+      "subtitle": "Saucen, die Zeit hatten, Brot, das nach Sonntag duftet, und ein Raum, der nicht hetzt.",
+      "ctaPrimary": "Über WhatsApp reservieren",
+      "ctaSecondary": "Zur Speisekarte",
+      "mediaAlt": "Warmes Licht über einer Pastaschüssel und frischen Zutaten."
+    },
+    "intro": {
+      "body": "Bei Trattoria Alesa Gelati gestalten wir Ihr Esserlebnis mit Wärme, Tradition und echter Aufmerksamkeit. Unsere Küche arbeitet mit frischen, sorgsam ausgewählten Zutaten und folgt Rezepten, die über Generationen weitergegeben wurden. Hier in Hochzoll bringt jedes Gericht ein Stück Italien nach Augsburg und schafft einen Ort, an dem Einheimische und Gäste zusammenkommen."
+    },
+    "experience": {
+      "title": "Tradition, die man schmeckt",
+      "body": "Teig darf ruhen, Ragù darf köcheln, und in der Küche bleibt es sachlich. Das ist keine Show — das ist Sorgfalt. Setzen Sie sich, trinken Sie Wasser, und lassen Sie den Abend langsam werden.",
+      "imageAlt": "Gericht im Restaurant — Farbe, Textur und Geschmack im Gleichgewicht.",
+      "imageAlt2": "Frische Pasta und Küchendetail — Tradition auf dem Teller.",
+      "captionLeft": " / Farbe, Textur, Geschmack — in ruhigem Gleichgewicht. / ",
+      "captionRight": " / Tradition auf dem Teller — Wärme in jedem Bissen. / "
+    },
+    "highlight": {
+      "eyebrow": "Trattoria & Tisch",
+      "body": "Frische Pasta, Pizza aus dem Holzofen und die ruhige Sicherheit einer Küche, die nicht hetzt. Ziehen Sie den Stuhl heran — wir haben Ihnen einen Platz im Raum frei.",
+      "discover": "+ mehr entdecken +",
+      "imageMidAlt": "Gläser über dem Tisch — ein Toast im weichen Licht.",
+      "imageRightAlt": "Innenraum des Restaurants — gedeckter Tisch, ruhige Atmosphäre.",
+      "captionMid": " / Ein Mittagessen, das bleiben darf — Glas, Leinen, Zeit. / ",
+      "captionRight": " / Unser Raum am späten Nachmittag — schlicht, warm, ehrlich. / "
+    },
+    "highlightFlip": {
+      "eyebrow": "Vom Küchenpass",
+      "body": "Olivenöl im Topf, fein gehackte Kräuter, Teig unter dem Tuch. Wir kochen für die Nachbarschaft — nicht für Applaus — die Stube soll sich anfühlen wie Sonntag, auch unter der Woche.",
+      "discover": "+ unsere Geschichte lesen +",
+      "imageLeftAlt": "Hände in der Arbeit — Vorbereitung auf dem Marmor.",
+      "imageMidAlt": "Dampf über dem Teller — Trost in Bewegung.",
+      "captionLeft": " / Messer leise, Bretter ruhig — der Tag beginnt ehrlich. / ",
+      "captionMid": " / Hitze, Dampf, der erste Löffel Geduld. / "
+    },
+    "splitScreen": {
+      "ariaLabel": "Zwei Vollbildfotos nebeneinander",
+      "imageLeftAlt": "Stimmung im Restaurant — linke Hälfte der Ansicht.",
+      "imageRightAlt": "Tisch und Details — rechte Hälfte der Ansicht.",
+      "captionLeft": " / Licht, Leinen, der Raum öffnet sich nach links. / ",
+      "captionRight": " / Gläser, Teller, der Abend nimmt Tempo auf. / "
+    },
+    "reviews": {
+      "title": "Ein paar Stimmen aus dem Raum",
+      "items": {
+        "0": {
+          "quote": "Ehrlich italienisch — warm, bodenständig. Wir kommen bald wieder.",
+          "name": "Gaststimme",
+          "role": "Hochzoll, Augsburg",
+          "avatarAlt": "Porträt eines lächelnden Gastes"
+        },
+        "1": {
+          "quote": "Dünner, lockerer Boden, reichlich Belag — genau das, was wir uns gewünscht haben.",
+          "name": "Gaststimme",
+          "role": "Hochzoll, Augsburg",
+          "avatarAlt": "Porträt eines Gastes am Tisch"
+        },
+        "2": {
+          "quote": "Sehr freundliche Bedienung, eine ruhige Atmosphäre — wir gingen satt und zufrieden.",
+          "name": "Gaststimme",
+          "role": "Hochzoll, Augsburg",
+          "avatarAlt": "Porträt eines Gastes im weichen Licht"
+        }
+      }
+    },
+    "cta": {
+      "title": "Einen Tisch in einer Nachricht sichern",
+      "body": "Schreiben Sie uns Tag, Uhrzeit und Personenzahl — wir antworten auf WhatsApp, sobald wir kurz von den Töpfen weg können.",
+      "button": "WhatsApp öffnen"
+    }
+  },
+  "About": {
+    "hero": {
+      "mediaAlt": "Warmes Ambiente in der Trattoria Alesa — derselbe Geist wie an unserem Tisch zu Hause."
+    },
+    "title": "Unsere Geschichte",
+    "lede": "Wir haben die Trattoria Alesa als Wohnzimmer für alle eröffnet, die den Klang vom Holzlöffel im Topf vermissen — und einen Tisch, der nicht drängt.",
+    "storyTitle": "Vom Familientisch",
+    "storyBody": "Rezepte sind mit uns über Grenzen gereist — in Heften, auswendig, mit kleinen Diskussionen. Hier in Hochzoll halten wir sie schlicht: weniger Zutaten, mehr Aufmerksamkeit.",
+    "philosophyTitle": "Haltung",
+    "philosophyBody": "Frische Ware, respektvolles Kochen, faire Portionen. Wir jagen keine Sterne — wir bewirten Nachbarschaft.",
+    "nonnaTitle": "Der Nonna‑Geist",
+    "nonnaBody": "Bei Nonna war es nie lautes Marketing — sondern der Stuhl, der rangezogen wird, die Serviette, und Essen, bei dem man durchatmet. Genau dieses Gefühl bewahren wir.",
+    "closing": "Italienische Wärme in Augsburg — ohne Theater, nur Gastfreundschaft."
+  },
+  "Menu": {
+    "title": "Speisekarte",
+    "intro": "Ein kleiner Auszug aus dem, was wir gern kochen. Saisonale Wechsel passieren leise — fragen Sie uns am Tisch.",
+    "pastaTitle": "Pasta",
+    "pizzaTitle": "Pizza",
+    "specialsTitle": "Spezialitäten",
+    "pasta": {
+      "0": { "name": "Tagliatelle al ragù", "desc": "Rinder‑Ragù, Parmigiano, feine Kräuter.", "price": "16,50 €" },
+      "1": { "name": "Spaghetti aglio, olio & peperoncino", "desc": "Knoblauch, Olivenöl, dezente Schärfe — klar und ehrlich.", "price": "12,90 €" },
+      "2": { "name": "Tortellini in brodo", "desc": "Kleine Taschen in goldener Brühe — Trost, den man trinken kann.", "price": "14,50 €" }
+    },
+    "pizza": {
+      "0": { "name": "Margherita", "desc": "San Marzano, Fior di Latte, Basilikum, Olivenöl.", "price": "11,50 €" },
+      "1": { "name": "Prosciutto e rucola", "desc": "Schinken, Rucola, gehobelter Parmigiano nach dem Backen.", "price": "15,50 €" },
+      "2": { "name": "Funghi", "desc": "Geröstete Pilze, Thymian, Mozzarella — waldig und warm.", "price": "14,50 €" }
+    },
+    "specials": {
+      "0": { "name": "Saltimbocca alla romana", "desc": "Kalb, Salbei, Prosciutto — mit saisonalem Gemüse.", "price": "22,00 €" },
+      "1": { "name": "Branzino al forno", "desc": "Wolfsbarsch aus dem Ofen, Zitrone, Kräuter — wenn der Fisch stimmig ist.", "price": "Marktpreis" },
+      "2": { "name": "Panna cotta", "desc": "Vanille, Obst der Saison — leicht, seidig.", "price": "7,50 €" }
+    }
+  },
+  "Contact": {
+    "title": "Kontakt",
+    "intro": "In Hochzoll sind wir schnell gefunden — schreiben, anrufen oder vorbeikommen, wenn wir geöffnet haben.",
+    "addressLabel": "Adresse",
+    "addressLines": "Trattoria Alesa\nExemplestraße 12\n86163 Augsburg",
+    "phoneLabel": "Telefon",
+    "phone": "+49 821 000 00 00",
+    "emailLabel": "E‑Mail",
+    "email": "hello@trattoria-alesa.example",
+    "hoursLabel": "Öffnungszeiten",
+    "hours": "Di–So 11:30–14:30 · 17:30–22:30\nMontag Ruhetag",
+    "note": "Für Reservierungen ist WhatsApp am schnellsten — damit bleibt die Leitung für Gäste im Saal frei."
+  },
+  "Reservations": {
+    "title": "Reservierungen",
+    "body": "Schicken Sie uns eine WhatsApp mit Wunschtag, Uhrzeit und Personenzahl. Wir bestätigen persönlich — ohne Formular, ohne Umwege.",
+    "button": "WhatsApp schreiben",
+    "secondary": "Lieber telefonieren? Alle Zahlen finden Sie auf der Kontaktseite.",
+    "contactLink": "Kontaktdaten",
+    "whatsappPrefill": "Guten Tag, ich möchte gerne einen Tisch reservieren."
+  }
+}

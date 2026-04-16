@@ -1,0 +1,116 @@
+@import "tailwindcss";
+
+:root {
+  --ease-standard: cubic-bezier(0.25, 0.1, 0.25, 1);
+  --duration-micro: 0.2s;
+  --duration-standard: 0.6s;
+  --duration-highlight: 1.2s;
+  --duration-narrative: 1.5s;
+  --brand-steel-grey: #84929e;
+  --brand-warm-brown: #7b6c62;
+  --brand-dark-slate: #171717;
+  --brand-cream: #f3f0ed;
+  --brand-white: #ffffff;
+  --header-theme-fg: var(--brand-cream);
+  --header-theme-muted: color-mix(in srgb, var(--brand-cream) 78%, transparent);
+  --header-theme-border: color-mix(in srgb, var(--brand-cream) 35%, transparent);
+  --header-theme-bg: color-mix(in srgb, var(--brand-dark-slate) 42%, transparent);
+}
+
+html[data-header-theme="brown"] {
+  --header-theme-fg: var(--brand-dark-slate);
+  --header-theme-muted: color-mix(in srgb, var(--brand-dark-slate) 72%, transparent);
+  --header-theme-border: color-mix(in srgb, var(--brand-dark-slate) 22%, transparent);
+  --header-theme-bg: color-mix(in srgb, var(--brand-cream) 88%, transparent);
+}
+
+html[data-header-theme="dapietro"] {
+  --header-theme-fg: var(--brand-cream);
+  --header-theme-muted: color-mix(in srgb, var(--brand-cream) 75%, transparent);
+  --header-theme-border: color-mix(in srgb, var(--brand-steel-grey) 55%, transparent);
+  --header-theme-bg: color-mix(in srgb, var(--brand-warm-brown) 55%, transparent);
+}
+
+@theme inline {
+  --color-steel-grey: var(--brand-steel-grey);
+  --color-warm-brown: var(--brand-warm-brown);
+  --color-dark-slate: var(--brand-dark-slate);
+  --color-cream: var(--brand-cream);
+  --font-sans: var(--font-body);
+  --font-display: var(--font-display);
+  --breakpoint-xs: 22rem;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+
+  body {
+    @apply bg-cream text-dark-slate font-sans antialiased min-h-dvh;
+  }
+
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-warm-brown;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes clipReveal {
+  from {
+    clip-path: inset(0 0 100% 0);
+  }
+  to {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn var(--duration-standard) var(--ease-standard) both;
+}
+
+.animate-slide-in-down {
+  animation: slideInDown var(--duration-micro) var(--ease-standard) both;
+}
+
+.animate-clip-reveal {
+  animation: clipReveal var(--duration-highlight) var(--ease-standard) both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-fade-in,
+  .animate-slide-in-down,
+  .animate-clip-reveal {
+    animation: none !important;
+  }
+}
+
+.footer-themed {
+  background-color: #171717;
+  color: var(--color-cream);
+}
