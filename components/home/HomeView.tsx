@@ -32,7 +32,7 @@ export async function HomeView() {
 
       <section data-header-theme="brown" className="bg-cream py-20 sm:py-24">
         <SectionContainer>
-          <SectionEnter className="max-w-[50vw] text-left">
+          <SectionEnter className="max-w-none text-left sm:max-w-[50vw]">
             <p className="text-2xl font-normal leading-8 tracking-normal text-warm-brown">
               {t("intro.body")}
             </p>
