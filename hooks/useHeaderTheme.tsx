@@ -17,6 +17,7 @@ import {
 } from "@/lib/scrollReferenceTheme";
 import { usePathname } from "@/i18n/navigation";
 import { useScrollAssist, type UseScrollAssistOptions } from "@/hooks/useScrollAssist";
+import { ENABLE_HOME_SCROLL_ASSIST } from "@/lib/featureFlags";
 
 type HeaderThemeContextValue = {
   theme: HeaderThemeName;
@@ -31,7 +32,7 @@ export function useHeaderTheme() {
 }
 
 const DEFAULT_SECTION_SELECTOR = "main [data-header-theme]";
-/** Só a secção 2 da home (intro) — ver `HomeView` e `useScrollAssist`. */
+/** Só a secção 2 da home (intro) — ver `HomeView`, `useScrollAssist`, e `ENABLE_HOME_SCROLL_ASSIST`. */
 const SCROLL_ASSIST_SECTION_SELECTOR = "main [data-scroll-assist]";
 
 export type HeaderThemeBridgeProps = {
@@ -156,6 +157,7 @@ export function HeaderThemeBridge({
     sectionSelector:
       scrollAssistOptions?.sectionSelector ?? SCROLL_ASSIST_SECTION_SELECTOR,
     enabled:
+      ENABLE_HOME_SCROLL_ASSIST &&
       isHome &&
       scrollAssist &&
       (scrollAssistOptions?.enabled !== false),

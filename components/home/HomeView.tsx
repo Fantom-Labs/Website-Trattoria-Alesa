@@ -28,6 +28,7 @@ export async function HomeView() {
         }
       />
 
+      {/* `data-scroll-assist`: scroll suave via useScrollAssist — ver `ENABLE_HOME_SCROLL_ASSIST` em lib/featureFlags.ts */}
       <section
         data-header-theme="brown"
         data-scroll-assist
