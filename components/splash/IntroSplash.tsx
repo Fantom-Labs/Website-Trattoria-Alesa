@@ -1,15 +1,18 @@
 "use client";
 
-import { easeStandard, motion as motionTokens } from "@/lib/tokens";
+import { easeStandard } from "@/lib/tokens";
+import Image from "next/image";
 import { motion, useReducedMotion } from "framer-motion";
-import { useTranslations } from "next-intl";
 import { startTransition, useEffect, useState } from "react";
 
 const STORAGE_KEY = "ta_intro_splash_seen";
 
-/** Entrada de marca: rápida (abaixo de ~2s), sem frustrar. */
+/** Tempo com o logo a “respirar” antes do fade do overlay. */
+const HOLD_BEFORE_FADE_SEC = 2.1;
+/** Fade do ecrã completo (inclui logo). */
+const OVERLAY_FADE_SEC = 0.48;
+
 export function IntroSplash() {
-  const t = useTranslations("Splash");
   const reduce = useReducedMotion();
   const [visible, setVisible] = useState(false);
   const [mounted, setMounted] = useState(false);
@@ -32,6 +35,7 @@ export function IntroSplash() {
 
   useEffect(() => {
     if (!mounted || !visible || reduce) return;
+    const failsafeMs = Math.round((HOLD_BEFORE_FADE_SEC + OVERLAY_FADE_SEC + 0.5) * 1000);
     const id = window.setTimeout(() => {
       setVisible(false);
       try {
@@ -39,7 +43,7 @@ export function IntroSplash() {
       } catch {
         /* ignore */
       }
-    }, 1680);
+    }, failsafeMs);
     return () => window.clearTimeout(id);
   }, [mounted, visible, reduce]);
 
@@ -51,43 +55,50 @@ export function IntroSplash() {
     return null;
   }
 
+  const markSeen = () => {
+    setVisible(false);
+    try {
+      sessionStorage.setItem(STORAGE_KEY, "1");
+    } catch {
+      /* ignore */
+    }
+  };
+
   return (
     <motion.div
-      className="fixed inset-0 z-[80] flex items-start justify-start bg-dark-slate p-4 sm:p-6 lg:p-8"
+      role="presentation"
+      aria-hidden
+      className="fixed inset-0 z-[80] flex items-center justify-center bg-cream"
       initial={{ opacity: 1 }}
       animate={{ opacity: 0 }}
-      transition={{ delay: 0.82, duration: 0.42, ease }}
-      onAnimationComplete={() => {
-        setVisible(false);
-        try {
-          sessionStorage.setItem(STORAGE_KEY, "1");
-        } catch {
-          /* ignore */
-        }
+      transition={{
+        delay: HOLD_BEFORE_FADE_SEC,
+        duration: OVERLAY_FADE_SEC,
+        ease,
       }}
+      onAnimationComplete={markSeen}
     >
       <motion.div
-        className="flex max-w-none flex-col items-start gap-3 text-left"
-        initial={{ opacity: 0, y: 14 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: motionTokens.standard, ease }}
+        className="relative h-[clamp(56px,18vmin,120px)] w-[clamp(88px,28vmin,190px)]"
+        animate={{
+          opacity: [0, 1],
+          scale: [0.92, 1.07],
+        }}
+        transition={{
+          duration: 0.95,
+          ease: "easeInOut",
+          repeat: Infinity,
+          repeatType: "mirror",
+        }}
       >
-        <motion.span
-          className="font-display text-3xl tracking-[0.08em] text-cream sm:text-4xl"
-          initial={{ letterSpacing: "0.2em", opacity: 0 }}
-          animate={{ letterSpacing: "0.08em", opacity: 1 }}
-          transition={{ duration: 0.72, ease }}
-        >
-          {t("title")}
-        </motion.span>
-        <motion.span
-          className="max-w-md text-sm text-steel-grey sm:max-w-xl"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.22, duration: motionTokens.micro, ease }}
-        >
-          {t("subtitle")}
-        </motion.span>
+        <Image
+          src="/logo.svg"
+          alt=""
+          fill
+          priority
+          className="object-contain"
+          sizes="(max-width: 768px) 180px, 190px"
+        />
       </motion.div>
     </motion.div>
   );

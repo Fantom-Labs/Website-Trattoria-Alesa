@@ -9,10 +9,6 @@
     "body": "The page you are looking for does not exist or has moved.",
     "home": "Back to home"
   },
-  "Splash": {
-    "title": "Trattoria Alesa",
-    "subtitle": "Hochzoll, Augsburg — a quiet Italian living room."
-  },
   "Nav": {
     "brand": "Trattoria Alesa",
     "home": "Home",
@@ -110,26 +106,12 @@
           "avatarAlt": "Portrait of a guest in soft light"
         }
       }
-    },
-    "cta": {
-      "title": "Save a table in a message",
-      "body": "Tell us your day, your time, and how many chairs you need — we’ll answer on WhatsApp as soon as we can step away from the stove.",
-      "button": "Open WhatsApp"
     }
   },
   "About": {
     "hero": {
       "mediaAlt": "Warm dining scene at Trattoria Alesa — the same spirit as our table at home."
-    },
-    "title": "Our story",
-    "lede": "We opened Trattoria Alesa as a living room for anyone missing the sound of a wooden spoon on a pot, the smell of garlic in olive oil, and a table that does not rush.",
-    "storyTitle": "From the family table",
-    "storyBody": "Recipes travelled with us across borders — folded into notebooks, remembered by touch, argued over kindly. Here in Hochzoll, we keep them honest: fewer ingredients, more attention.",
-    "philosophyTitle": "Philosophy",
-    "philosophyBody": "Fresh produce, respectful cooking, fair portions. We are not chasing stars — we are feeding neighbours.",
-    "nonnaTitle": "The Nonna spirit",
-    "nonnaBody": "Nonna’s kitchen was never loud marketing — it was a chair pushed in, a napkin on your lap, and food that made you exhale. That is the feeling we protect.",
-    "closing": "Italian warmth in Augsburg, without theatrics — just hospitality."
+    }
   },
   "Menu": {
     "title": "Menu",

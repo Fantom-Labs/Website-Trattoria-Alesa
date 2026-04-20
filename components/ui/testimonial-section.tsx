@@ -37,7 +37,7 @@ export function TestimonialSection({
       className="border-t border-warm-brown/15 bg-cream py-20 sm:py-24"
     >
       <SectionContainer>
-        <SectionEnter className="mb-12 text-left">
+        <SectionEnter className="mb-12 text-center">
           <h2 className="font-display text-3xl tracking-wide text-dark-slate sm:text-4xl">{title}</h2>
         </SectionEnter>
         <div className="grid gap-10 md:grid-cols-3 md:gap-8 lg:gap-12">

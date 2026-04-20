@@ -9,10 +9,6 @@
     "body": "Diese Seite gibt es nicht oder wurde verschoben.",
     "home": "Zur Startseite"
   },
-  "Splash": {
-    "title": "Trattoria Alesa",
-    "subtitle": "Hochzoll, Augsburg — wie ein kleines italienisches Wohnzimmer."
-  },
   "Nav": {
     "brand": "Trattoria Alesa",
     "home": "Start",
@@ -110,26 +106,12 @@
           "avatarAlt": "Porträt eines Gastes im weichen Licht"
         }
       }
-    },
-    "cta": {
-      "title": "Einen Tisch in einer Nachricht sichern",
-      "body": "Schreiben Sie uns Tag, Uhrzeit und Personenzahl — wir antworten auf WhatsApp, sobald wir kurz von den Töpfen weg können.",
-      "button": "WhatsApp öffnen"
     }
   },
   "About": {
     "hero": {
       "mediaAlt": "Warmes Ambiente in der Trattoria Alesa — derselbe Geist wie an unserem Tisch zu Hause."
-    },
-    "title": "Unsere Geschichte",
-    "lede": "Wir haben die Trattoria Alesa als Wohnzimmer für alle eröffnet, die den Klang vom Holzlöffel im Topf vermissen — und einen Tisch, der nicht drängt.",
-    "storyTitle": "Vom Familientisch",
-    "storyBody": "Rezepte sind mit uns über Grenzen gereist — in Heften, auswendig, mit kleinen Diskussionen. Hier in Hochzoll halten wir sie schlicht: weniger Zutaten, mehr Aufmerksamkeit.",
-    "philosophyTitle": "Haltung",
-    "philosophyBody": "Frische Ware, respektvolles Kochen, faire Portionen. Wir jagen keine Sterne — wir bewirten Nachbarschaft.",
-    "nonnaTitle": "Der Nonna‑Geist",
-    "nonnaBody": "Bei Nonna war es nie lautes Marketing — sondern der Stuhl, der rangezogen wird, die Serviette, und Essen, bei dem man durchatmet. Genau dieses Gefühl bewahren wir.",
-    "closing": "Italienische Wärme in Augsburg — ohne Theater, nur Gastfreundschaft."
+    }
   },
   "Menu": {
     "title": "Speisekarte",

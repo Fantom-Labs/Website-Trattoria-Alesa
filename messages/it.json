@@ -9,10 +9,6 @@
     "body": "La pagina che cerchi non esiste o è stata spostata.",
     "home": "Torna alla home"
   },
-  "Splash": {
-    "title": "Trattoria Alesa",
-    "subtitle": "Hochzoll, Augusta — un soggiorno italiano, lontano dal rumore."
-  },
   "Nav": {
     "brand": "Trattoria Alesa",
     "home": "Home",
@@ -110,26 +106,12 @@
           "avatarAlt": "Ritratto di un ospite in luce morbida"
         }
       }
-    },
-    "cta": {
-      "title": "Blocca un tavolo con un messaggio",
-      "body": "Scrivici giorno, orario e quante persone — rispondiamo su WhatsApp appena riusciamo a staccarci dai fornelli.",
-      "button": "Apri WhatsApp"
     }
   },
   "About": {
     "hero": {
       "mediaAlt": "Scena conviviale calda in Trattoria Alesa — lo stesso spirito del nostro tavolo di casa."
-    },
-    "title": "La nostra storia",
-    "lede": "Abbiamo aperto la Trattoria Alesa come un salotto per chi sente la mancanza del cucchiaio sul pentolino — e di un tavolo che non fa fretta.",
-    "storyTitle": "Dalla tavola di famiglia",
-    "storyBody": "Le ricette hanno attraversato confini — sui quaderni, a memoria, con piccole discussioni affettuose. Qui a Hochzoll le teniamo oneste: meno ingredienti, più attenzione.",
-    "philosophyTitle": "Filosofia",
-    "philosophyBody": "Materie prime fresche, cotture rispettose, porzioni giuste. Non inseguiamo titoli — serviamo vicinanza.",
-    "nonnaTitle": "Lo spirito della Nonna",
-    "nonnaBody": "La cucina della Nonna non era marketing — era la sedia avvicinata, il tovagliolo sulle ginocchia, e il cibo che ti faceva sciogliere le spalle. È quella sensazione che custodiamo.",
-    "closing": "Calore italiano ad Augusta — senza teatro, solo convivialità."
+    }
   },
   "Menu": {
     "title": "Menu",

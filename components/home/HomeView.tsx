@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { WhatsAppButton } from "@/components/links/WhatsAppButton";
 import { HeroSection } from "@/components/home/HeroSection";
 import { SectionContainer } from "@/components/layout/SectionContainer";
 import { Divider } from "@/components/layout/Divider";
@@ -138,22 +137,6 @@ export async function HomeView() {
                 caption={t("highlight.captionRight")}
               />
             </div>
-          </div>
-        </SectionContainer>
-      </section>
-
-      <section data-header-theme="brown" className="bg-neutral-200 py-20 text-[#171717] sm:py-24">
-        <SectionContainer className="flex flex-col items-start gap-6 sm:flex-row sm:items-center sm:justify-between">
-          <SectionEnter className="min-w-0 space-y-3">
-            <h2 className="font-display text-3xl tracking-wide text-[#171717] sm:text-4xl">{t("cta.title")}</h2>
-            <p className="text-sm leading-relaxed text-[#171717] sm:text-base">{t("cta.body")}</p>
-          </SectionEnter>
-          <div className="w-full shrink-0 sm:w-auto">
-            <WhatsAppButton
-              labelNamespace="Home.cta"
-              labelKey="button"
-              textLink
-            />
           </div>
         </SectionContainer>
       </section>
