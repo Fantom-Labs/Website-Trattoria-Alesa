@@ -133,7 +133,6 @@
   },
   "Menu": {
     "title": "Speisekarte",
-    "intro": "Unsere Speisekarte finden Sie unten als PDF. Saisonale Wechsel sind klein — fragen Sie uns am Tisch.",
     "pdfFrameTitle": "Speisekarte (PDF)",
     "openInDrive": "In Google Drive öffnen (neuer Tab)",
     "pdfMissing": "Das Menü-PDF ist noch nicht verknüpft. Bitte schauen Sie später wieder vorbei."

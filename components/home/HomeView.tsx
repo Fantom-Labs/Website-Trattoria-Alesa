@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { WhatsAppButton } from "@/components/links/WhatsAppButton";
 import { HeroSection } from "@/components/home/HeroSection";
 import { SectionContainer } from "@/components/layout/SectionContainer";
@@ -16,15 +17,13 @@ export async function HomeView() {
       <HeroSection
         media={
           <div className="relative h-full min-h-full w-full">
-            <video
-              className="absolute inset-0 h-full w-full object-cover"
-              src="/videos/video-hero.mp4"
-              autoPlay
-              muted
-              loop
-              playsInline
-              preload="auto"
-              aria-label={t("hero.mediaAlt")}
+            <Image
+              src="/images/hero.png"
+              alt={t("hero.mediaAlt")}
+              fill
+              priority
+              className="object-cover"
+              sizes="100vw"
             />
           </div>
         }

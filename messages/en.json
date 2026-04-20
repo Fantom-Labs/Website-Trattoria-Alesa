@@ -133,7 +133,6 @@
   },
   "Menu": {
     "title": "Menu",
-    "intro": "Our menu opens below as a PDF. Seasonal changes happen quietly — ask your server.",
     "pdfFrameTitle": "Menu PDF",
     "openInDrive": "Open in Google Drive (new tab)",
     "pdfMissing": "The menu PDF is not linked yet. Please check back soon."

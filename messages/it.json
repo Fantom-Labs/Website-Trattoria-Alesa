@@ -133,7 +133,6 @@
   },
   "Menu": {
     "title": "Menu",
-    "intro": "Il menu è qui sotto in PDF. I piatti seguono la stagione — chiedi in sala se vuoi un consiglio.",
     "pdfFrameTitle": "Menu PDF",
     "openInDrive": "Apri su Google Drive (nuova scheda)",
     "pdfMissing": "Il PDF del menu non è ancora collegato. Torna a trovarci tra poco."

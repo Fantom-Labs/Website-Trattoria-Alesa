@@ -11,11 +11,12 @@ export async function MenuPdfEmbed({ previewUrl, viewUrl }: Props) {
 
   return (
     <SectionContainer className="py-6">
-      <div className="overflow-hidden rounded-lg border border-warm-brown/20 bg-white shadow-sm">
+      {/* A4 portrait: 210mm × 297mm → aspect-ratio width/height = 210/297 */}
+      <div className="relative mx-auto w-full max-w-[210mm] overflow-hidden rounded-lg border border-warm-brown/20 bg-white shadow-sm aspect-[210/297]">
         <iframe
           title={t("pdfFrameTitle")}
           src={previewUrl}
-          className="h-[min(85vh,900px)] w-full border-0"
+          className="absolute inset-0 h-full w-full border-0"
           allow="fullscreen"
         />
       </div>
