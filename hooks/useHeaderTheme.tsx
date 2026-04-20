@@ -159,6 +159,7 @@ export function HeaderThemeBridge({
       isHome &&
       scrollAssist &&
       (scrollAssistOptions?.enabled !== false),
+    pageKey: scrollAssistOptions?.pageKey ?? pathname,
   });
 
   const value = useMemo(() => ({ theme }), [theme]);

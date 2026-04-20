@@ -3,9 +3,6 @@
 import { useEffect } from "react";
 import { layout } from "@/lib/tokens";
 
-/** Evita novo empurrão logo após um snap (ms). Curto o suficiente para encadear secções ao descer. */
-const SNAP_COOLDOWN_MS = 550;
-
 /** Mínimo de pixels a descer para valer a pena animar (evita micro-oscilações). */
 const MIN_SNAP_DELTA_PX = 36;
 
@@ -24,6 +21,10 @@ export type UseScrollAssistOptions = {
    * Default: 1800
    */
   durationMs?: number;
+  /**
+   * Quando muda, o contador de “uma vez por carga” repõe-se (usar `pathname`).
+   */
+  pageKey?: string;
 };
 
 function easeInOutCubic(t: number): number {
@@ -38,7 +39,9 @@ function easeInOutCubic(t: number): number {
  * Cada frame usa `scrollTo({ behavior: "instant" })` para não combinar com
  * `scroll-behavior: smooth` do `html` (isso causava oscilação para cima/baixo).
  *
- * Cooldown curto após cada snap evita re-disparo no mesmo limiar.
+ * Por defeito corre **no máximo uma vez** por montagem do efeito (passa
+ * `pageKey={pathname}` para repor ao mudar de rota).
+ *
  * Duração por defeito da animação: 1800 ms (ajustável com `durationMs`).
  *
  * Não cancela a animação em cada `wheel` para baixo — o assiste corre
@@ -50,12 +53,16 @@ export function useScrollAssist({
   minSectionHeight = 80,
   enabled = true,
   durationMs = 1800,
+  pageKey,
 }: UseScrollAssistOptions = {}) {
   useEffect(() => {
     if (!enabled) return;
 
     const mq = window.matchMedia("(prefers-reduced-motion: reduce)");
     if (mq.matches) return;
+
+    /** Um único empurrão por “carga” (até `pageKey` mudar e o efeito re-correr). */
+    let assistConsumed = false;
 
     let autoScrolling = false;
     let lastScrollY = window.scrollY;
@@ -65,7 +72,6 @@ export function useScrollAssist({
     let animRafId = 0;
     let scheduleRafId = 0;
     let ratioMemory = new WeakMap<HTMLElement, number>();
-    let lastSnapEndTime = -Infinity;
 
     const getHeaderBottom = (): number => {
       const el = document.querySelector<HTMLElement>("[data-site-header]");
@@ -87,7 +93,6 @@ export function useScrollAssist({
     const finishAutoScroll = () => {
       autoScrolling = false;
       lastScrollY = window.scrollY;
-      lastSnapEndTime = performance.now();
       clearTimeout(safetyTimeoutId);
       ratioMemory = new WeakMap();
     };
@@ -106,8 +111,8 @@ export function useScrollAssist({
       const delta = safeTarget - startY;
       if (delta < MIN_SNAP_DELTA_PX) return;
 
+      assistConsumed = true;
       autoScrolling = true;
-      lastSnapEndTime = -Infinity;
 
       const duration = Math.max(400, durationMs);
       const t0 = performance.now();
@@ -147,9 +152,9 @@ export function useScrollAssist({
     };
 
     const evaluate = () => {
+      if (assistConsumed) return;
       if (autoScrolling) return;
       if (scrollDir !== "down") return;
-      if (performance.now() - lastSnapEndTime < SNAP_COOLDOWN_MS) return;
 
       const vh = window.innerHeight;
       const headerBottom = getHeaderBottom();
@@ -207,5 +212,12 @@ export function useScrollAssist({
       cancelAnim();
       finishAutoScroll();
     };
-  }, [enabled, sectionSelector, triggerRatio, minSectionHeight, durationMs]);
+  }, [
+    enabled,
+    sectionSelector,
+    triggerRatio,
+    minSectionHeight,
+    durationMs,
+    pageKey,
+  ]);
 }
