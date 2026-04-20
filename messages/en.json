@@ -85,25 +85,25 @@
       "captionRight": " / Glasses, plates, and the evening gathering pace. / "
     },
     "reviews": {
-      "title": "A few words from the room",
+      "title": "Reviews",
       "items": {
         "0": {
           "quote": "Truly Italian — warm, honest cooking. We’ll be back soon.",
           "name": "Guest note",
           "role": "Hochzoll, Augsburg",
-          "avatarAlt": "Portrait of a smiling guest"
+          "avatarAlt": "TripAdvisor"
         },
         "1": {
           "quote": "Thin, airy pizza with generous toppings — exactly what we hoped for.",
           "name": "Guest note",
           "role": "Hochzoll, Augsburg",
-          "avatarAlt": "Portrait of a guest at the table"
+          "avatarAlt": "TripAdvisor"
         },
         "2": {
           "quote": "Very friendly service and a calm atmosphere. We left full and happy.",
           "name": "Guest note",
           "role": "Hochzoll, Augsburg",
-          "avatarAlt": "Portrait of a guest in soft light"
+          "avatarAlt": "TripAdvisor"
         }
       }
     }

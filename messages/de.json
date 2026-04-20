@@ -85,25 +85,25 @@
       "captionRight": " / Gläser, Teller, der Abend nimmt Tempo auf. / "
     },
     "reviews": {
-      "title": "Ein paar Stimmen aus dem Raum",
+      "title": "Bewertungen",
       "items": {
         "0": {
           "quote": "Ehrlich italienisch — warm, bodenständig. Wir kommen bald wieder.",
           "name": "Gaststimme",
           "role": "Hochzoll, Augsburg",
-          "avatarAlt": "Porträt eines lächelnden Gastes"
+          "avatarAlt": "TripAdvisor"
         },
         "1": {
           "quote": "Dünner, lockerer Boden, reichlich Belag — genau das, was wir uns gewünscht haben.",
           "name": "Gaststimme",
           "role": "Hochzoll, Augsburg",
-          "avatarAlt": "Porträt eines Gastes am Tisch"
+          "avatarAlt": "TripAdvisor"
         },
         "2": {
           "quote": "Sehr freundliche Bedienung, eine ruhige Atmosphäre — wir gingen satt und zufrieden.",
           "name": "Gaststimme",
           "role": "Hochzoll, Augsburg",
-          "avatarAlt": "Porträt eines Gastes im weichen Licht"
+          "avatarAlt": "TripAdvisor"
         }
       }
     }

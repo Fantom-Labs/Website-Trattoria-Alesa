@@ -1,6 +1,6 @@
 import { SectionContainer } from "@/components/layout/SectionContainer";
 import { SectionEnter } from "@/components/reveal/SectionEnter";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import Image from "next/image";
 
 export type TestimonialItem = {
   quote: string;
@@ -8,21 +8,6 @@ export type TestimonialItem = {
   role: string;
   avatarAlt: string;
 };
-
-/** Retratos Unsplash (crop 128) — alinhados por índice com `items`. */
-const PORTRAIT_URLS = [
-  "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=128&h=128&q=80",
-  "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=128&h=128&q=80",
-  "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=128&h=128&q=80",
-] as const;
-
-function fallbackInitials(name: string) {
-  const parts = name.trim().split(/\s+/).filter(Boolean);
-  if (parts.length >= 2) {
-    return (parts[0]![0]! + parts[1]![0]!).toUpperCase();
-  }
-  return name.slice(0, 2).toUpperCase() || "?";
-}
 
 export function TestimonialSection({
   title,
@@ -38,7 +23,9 @@ export function TestimonialSection({
     >
       <SectionContainer>
         <SectionEnter className="mb-12 text-center">
-          <h2 className="font-display text-3xl tracking-wide text-dark-slate sm:text-4xl">{title}</h2>
+          <h2 className="text-[18px] font-bold uppercase leading-relaxed tracking-normal text-steel-grey">
+            {title}
+          </h2>
         </SectionEnter>
         <div className="grid gap-10 md:grid-cols-3 md:gap-8 lg:gap-12">
           {items.map((item, index) => (
@@ -46,13 +33,15 @@ export function TestimonialSection({
               <blockquote className="relative max-w-xl pl-6 before:absolute before:inset-y-0 before:left-0 before:w-1 before:rounded-full before:bg-[#C5A059]">
                 <p className="text-lg leading-relaxed text-dark-slate">{item.quote}</p>
                 <footer className="mt-4 flex flex-wrap items-center gap-2">
-                  <Avatar className="size-8 shrink-0 border border-transparent shadow ring-1 ring-dark-slate/10">
-                    <AvatarImage
-                      src={PORTRAIT_URLS[index] ?? PORTRAIT_URLS[0]}
+                  <span className="relative size-8 shrink-0 overflow-hidden rounded-full bg-white shadow ring-1 ring-dark-slate/10">
+                    <Image
+                      src="/Tripadvisor-Logo.png"
                       alt={item.avatarAlt}
+                      fill
+                      sizes="32px"
+                      className="object-cover"
                     />
-                    <AvatarFallback>{fallbackInitials(item.name)}</AvatarFallback>
-                  </Avatar>
+                  </span>
                   <cite className="not-italic text-sm font-medium text-dark-slate">{item.name}</cite>
                   <span aria-hidden className="size-1 shrink-0 rounded-full bg-dark-slate/15" />
                   <span className="text-sm text-steel-grey">{item.role}</span>

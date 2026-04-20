@@ -85,25 +85,25 @@
       "captionRight": " / Bicchieri, piatti, la sera che prende ritmo. / "
     },
     "reviews": {
-      "title": "Qualche voce dalla sala",
+      "title": "Recensioni",
       "items": {
         "0": {
           "quote": "Davvero italiano — caldo, schietto. Torneremo presto.",
           "name": "Ospite",
           "role": "Hochzoll, Augusta",
-          "avatarAlt": "Ritratto di un ospite sorridente"
+          "avatarAlt": "TripAdvisor"
         },
         "1": {
           "quote": "Pizza sottile e ariosa, condimento generoso — proprio così.",
           "name": "Ospite",
           "role": "Hochzoll, Augusta",
-          "avatarAlt": "Ritratto di un ospite al tavolo"
+          "avatarAlt": "TripAdvisor"
         },
         "2": {
           "quote": "Servizio gentilissimo, atmosfera tranquilla — usciti sazi e contenti.",
           "name": "Ospite",
           "role": "Hochzoll, Augusta",
-          "avatarAlt": "Ritratto di un ospite in luce morbida"
+          "avatarAlt": "TripAdvisor"
         }
       }
     }
