@@ -61,7 +61,7 @@ export function SiteHeader() {
   return (
     <>
       <header className="fixed inset-x-0 top-0 z-50 border-b border-stone-200 bg-white text-[#333333]">
-        <div className="relative h-16 w-full px-4 py-2 sm:px-6 lg:h-[5.5rem] lg:px-8 lg:py-3">
+        <div className="relative h-16 w-full px-4 py-2 sm:px-6 lg:h-[5.5rem] lg:px-8 lg:py-1">
           {/* Desktop: largura total — links nas extremidades, logo ao centro da viewport */}
           <div className="hidden h-full w-full lg:grid lg:grid-cols-[1fr_auto_1fr] lg:items-center lg:gap-4 xl:gap-8">
             <nav
@@ -80,9 +80,9 @@ export function SiteHeader() {
                 <Image
                   src="/logo.png"
                   alt={t("logoAlt")}
-                  width={220}
-                  height={72}
-                  className="h-16 w-auto object-contain lg:h-16"
+                  width={275}
+                  height={90}
+                  className="h-20 w-auto object-contain lg:h-20"
                   priority
                 />
               </Link>
@@ -118,9 +118,9 @@ export function SiteHeader() {
               <Image
                 src="/logo.png"
                 alt={t("logoAlt")}
-                width={200}
-                height={64}
-                className="mx-auto h-9 w-auto max-w-[min(48vw,10rem)] object-contain"
+                width={250}
+                height={80}
+                className="mx-auto h-[2.8125rem] w-auto max-w-[min(60vw,12.5rem)] object-contain"
                 priority
               />
             </Link>
