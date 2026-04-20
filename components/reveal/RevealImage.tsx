@@ -88,6 +88,13 @@ export function RevealImage({
         priority={priority}
       />
     </div>,
-    caption ? <EditorialFigcaption key="cap" caption={caption} /> : null,
+    caption ? (
+      <EditorialFigcaption
+        key="cap"
+        caption={caption}
+        overlayVisible={revealed}
+        overlayTransitionDurationSec={duration}
+      />
+    ) : null,
   );
 }

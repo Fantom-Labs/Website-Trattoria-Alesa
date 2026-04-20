@@ -65,6 +65,13 @@ export function ExperienceGalleryImage({
         className="object-cover"
       />
     </motion.div>,
-    caption ? <EditorialFigcaption key="cap" caption={caption} /> : null,
+    caption ? (
+      <EditorialFigcaption
+        key="cap"
+        caption={caption}
+        overlayVisible={revealed}
+        overlayTransitionDurationSec={motionTokens.galleryImageRevealDuration}
+      />
+    ) : null,
   );
 }

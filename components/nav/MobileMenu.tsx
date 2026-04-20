@@ -88,12 +88,13 @@ export function MobileMenu({ open, onClose }: Props) {
             <div className="mb-8 flex justify-start border-b border-stone-100 pb-6">
               <Link href="/" onClick={onClose}>
                 <Image
-                  src="/logo.png"
+                  src="/logo.svg"
                   alt={t("logoAlt")}
                   width={200}
                   height={64}
                   className="h-10 w-auto object-contain"
                   priority
+                  unoptimized
                 />
               </Link>
             </div>

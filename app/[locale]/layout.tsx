@@ -64,8 +64,8 @@ export default async function LocaleLayout({ children, params }: Props) {
       <body className="flex min-h-dvh flex-col bg-cream font-sans text-dark-slate">
         <NextIntlClientProvider messages={messages}>
           <IntroSplash />
-          <SiteHeader />
           <HeaderThemeBridge>
+            <SiteHeader />
             <a
               href="#main-content"
               className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-[100] focus:rounded-sm focus:bg-cream focus:px-4 focus:py-2 focus:text-dark-slate"

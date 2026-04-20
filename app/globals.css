@@ -50,6 +50,11 @@ html[data-header-theme="dapietro"] {
     html {
       scroll-behavior: auto;
     }
+
+    header[data-site-header],
+    header[data-site-header] :where(a, button) {
+      transition: none;
+    }
   }
 
   body {

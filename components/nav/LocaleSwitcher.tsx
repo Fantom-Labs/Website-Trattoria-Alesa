@@ -8,7 +8,14 @@ import { cn } from "@/lib/utils";
 import { useLocale, useTranslations } from "next-intl";
 import { useEffect, useId, useRef, useState } from "react";
 
-export function LocaleSwitcher({ className }: { className?: string }) {
+export function LocaleSwitcher({
+  className,
+  onDarkSection = false,
+}: {
+  className?: string;
+  /** Barra sobre fundo escuro (hero): controlo claro sobre vidro escuro. */
+  onDarkSection?: boolean;
+}) {
   const t = useTranslations("Nav");
   const pathname = usePathname();
   const locale = useLocale() as LocaleDisplayKey;
@@ -38,7 +45,12 @@ export function LocaleSwitcher({ className }: { className?: string }) {
     <div ref={rootRef} className={cn("relative", className)}>
       <button
         type="button"
-        className="inline-flex items-center gap-2 rounded-full border border-stone-300 bg-white px-3 py-1.5 text-xs font-medium text-[#333] shadow-sm transition-colors hover:border-stone-400"
+        className={cn(
+          "inline-flex items-center gap-2 rounded-full border px-3 py-1.5 text-xs font-medium shadow-sm transition-colors",
+          onDarkSection
+            ? "border-white/25 bg-white/10 text-white hover:border-white/40 hover:bg-white/15"
+            : "border-stone-300 bg-white text-[#333] hover:border-stone-400",
+        )}
         aria-expanded={open}
         aria-haspopup="listbox"
         aria-controls={listId}
@@ -51,7 +63,11 @@ export function LocaleSwitcher({ className }: { className?: string }) {
           width="14"
           height="14"
           viewBox="0 0 24 24"
-          className={cn("shrink-0 text-stone-500 transition-transform", open && "rotate-180")}
+          className={cn(
+            "shrink-0 transition-transform",
+            onDarkSection ? "text-white/70" : "text-stone-500",
+            open && "rotate-180",
+          )}
           aria-hidden
         >
           <path
