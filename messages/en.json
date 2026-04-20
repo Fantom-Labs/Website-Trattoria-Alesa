@@ -133,25 +133,10 @@
   },
   "Menu": {
     "title": "Menu",
-    "intro": "A short selection of what we love to make. Seasonal changes happen quietly — ask your server.",
-    "pastaTitle": "Pasta",
-    "pizzaTitle": "Pizza",
-    "specialsTitle": "Specials",
-    "pasta": {
-      "0": { "name": "Tagliatelle al ragù", "desc": "Slow beef ragù, Parmigiano, soft herbs.", "price": "€16.50" },
-      "1": { "name": "Spaghetti aglio, olio & peperoncino", "desc": "Garlic, olive oil, gentle heat — when you want something clear and true.", "price": "€12.90" },
-      "2": { "name": "Tortellini in brodo", "desc": "Little hats in golden broth — comfort in a bowl.", "price": "€14.50" }
-    },
-    "pizza": {
-      "0": { "name": "Margherita", "desc": "San Marzano tomatoes, fior di latte, basil, olive oil.", "price": "€11.50" },
-      "1": { "name": "Prosciutto e rucola", "desc": "Salted ham, rocket, shaved Parmigiano after the bake.", "price": "€15.50" },
-      "2": { "name": "Funghi", "desc": "Roasted mushrooms, thyme, mozzarella — woodsy and warm.", "price": "€14.50" }
-    },
-    "specials": {
-      "0": { "name": "Saltimbocca alla romana", "desc": "Veal, sage, prosciutto — served with seasonal vegetables.", "price": "€22.00" },
-      "1": { "name": "Branzino al forno", "desc": "Whole sea bass, lemon, herbs — when the market smiles on us.", "price": "Market" },
-      "2": { "name": "Panna cotta", "desc": "Vanilla, seasonal fruit — light, silky finish.", "price": "€7.50" }
-    }
+    "intro": "Our menu opens below as a PDF. Seasonal changes happen quietly — ask your server.",
+    "pdfFrameTitle": "Menu PDF",
+    "openInDrive": "Open in Google Drive (new tab)",
+    "pdfMissing": "The menu PDF is not linked yet. Please check back soon."
   },
   "Contact": {
     "title": "Contact",

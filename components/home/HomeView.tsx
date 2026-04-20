@@ -97,7 +97,7 @@ export async function HomeView() {
         />
         <EditorialCoverImage
           className="h-full w-full"
-          src="/images/img-6.png"
+          src="/images/img-9.png"
           alt={t("splitScreen.imageRightAlt")}
           caption={t("splitScreen.captionRight")}
           sizes="50vw"

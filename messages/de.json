@@ -133,25 +133,10 @@
   },
   "Menu": {
     "title": "Speisekarte",
-    "intro": "Ein kleiner Auszug aus dem, was wir gern kochen. Saisonale Wechsel passieren leise — fragen Sie uns am Tisch.",
-    "pastaTitle": "Pasta",
-    "pizzaTitle": "Pizza",
-    "specialsTitle": "Spezialitäten",
-    "pasta": {
-      "0": { "name": "Tagliatelle al ragù", "desc": "Rinder‑Ragù, Parmigiano, feine Kräuter.", "price": "16,50 €" },
-      "1": { "name": "Spaghetti aglio, olio & peperoncino", "desc": "Knoblauch, Olivenöl, dezente Schärfe — klar und ehrlich.", "price": "12,90 €" },
-      "2": { "name": "Tortellini in brodo", "desc": "Kleine Taschen in goldener Brühe — Trost, den man trinken kann.", "price": "14,50 €" }
-    },
-    "pizza": {
-      "0": { "name": "Margherita", "desc": "San Marzano, Fior di Latte, Basilikum, Olivenöl.", "price": "11,50 €" },
-      "1": { "name": "Prosciutto e rucola", "desc": "Schinken, Rucola, gehobelter Parmigiano nach dem Backen.", "price": "15,50 €" },
-      "2": { "name": "Funghi", "desc": "Geröstete Pilze, Thymian, Mozzarella — waldig und warm.", "price": "14,50 €" }
-    },
-    "specials": {
-      "0": { "name": "Saltimbocca alla romana", "desc": "Kalb, Salbei, Prosciutto — mit saisonalem Gemüse.", "price": "22,00 €" },
-      "1": { "name": "Branzino al forno", "desc": "Wolfsbarsch aus dem Ofen, Zitrone, Kräuter — wenn der Fisch stimmig ist.", "price": "Marktpreis" },
-      "2": { "name": "Panna cotta", "desc": "Vanille, Obst der Saison — leicht, seidig.", "price": "7,50 €" }
-    }
+    "intro": "Unsere Speisekarte finden Sie unten als PDF. Saisonale Wechsel sind klein — fragen Sie uns am Tisch.",
+    "pdfFrameTitle": "Speisekarte (PDF)",
+    "openInDrive": "In Google Drive öffnen (neuer Tab)",
+    "pdfMissing": "Das Menü-PDF ist noch nicht verknüpft. Bitte schauen Sie später wieder vorbei."
   },
   "Contact": {
     "title": "Kontakt",

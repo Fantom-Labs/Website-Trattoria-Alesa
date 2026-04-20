@@ -133,25 +133,10 @@
   },
   "Menu": {
     "title": "Menu",
-    "intro": "Un assaggio di ciò che ci piace fare. I cambi di stagione arrivano piano — chiedi in sala.",
-    "pastaTitle": "Pasta",
-    "pizzaTitle": "Pizza",
-    "specialsTitle": "Specialità",
-    "pasta": {
-      "0": { "name": "Tagliatelle al ragù", "desc": "Ragù di manzo lento, Parmigiano, erbe fini.", "price": "€ 16,50" },
-      "1": { "name": "Spaghetti aglio, olio & peperoncino", "desc": "Aglio, olio, peperoncino misurato — chiaro e vero.", "price": "€ 12,90" },
-      "2": { "name": "Tortellini in brodo", "desc": "Cappelletti in brodo dorato — abbraccio in ciotola.", "price": "€ 14,50" }
-    },
-    "pizza": {
-      "0": { "name": "Margherita", "desc": "Pomodoro San Marzano, fior di latte, basilico, olio.", "price": "€ 11,50" },
-      "1": { "name": "Prosciutto e rucola", "desc": "Prosciutto, rucola, Parmigiano a lamelle dopo la cottura.", "price": "€ 15,50" },
-      "2": { "name": "Funghi", "desc": "Funghi arrostiti, timo, mozzarella — profumo di bosco.", "price": "€ 14,50" }
-    },
-    "specials": {
-      "0": { "name": "Saltimbocca alla romana", "desc": "Vitello, salvia, prosciutto — con verdure di stagione.", "price": "€ 22,00" },
-      "1": { "name": "Branzino al forno", "desc": "Branzino intero, limone, erbe — quando il pesce è giusto.", "price": "Mercato" },
-      "2": { "name": "Panna cotta", "desc": "Vaniglia, frutta di stagione — finale setoso e leggero.", "price": "€ 7,50" }
-    }
+    "intro": "Il menu è qui sotto in PDF. I piatti seguono la stagione — chiedi in sala se vuoi un consiglio.",
+    "pdfFrameTitle": "Menu PDF",
+    "openInDrive": "Apri su Google Drive (nuova scheda)",
+    "pdfMissing": "Il PDF del menu non è ancora collegato. Torna a trovarci tra poco."
   },
   "Contact": {
     "title": "Contatti",
