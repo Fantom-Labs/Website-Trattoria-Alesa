@@ -24,13 +24,12 @@ export async function MenuPdfEmbed({ previewUrl, viewUrl, variant = "full" }: Pr
             loading="lazy"
           />
         </div>
-        <div className="flex shrink-0 justify-center border-t border-cream/15 px-4 py-3 sm:py-4">
+        <div className="flex shrink-0 justify-center border-t border-stone-200/90 px-4 py-3 sm:py-4">
           <Button
             externalHref={viewUrl}
             variant="secondary"
             target="_blank"
             rel="noopener noreferrer"
-            className="border-cream/50 text-cream hover:border-cream hover:bg-white/10 hover:text-cream focus-visible:outline-cream"
           >
             {t("openInNewTab")}
           </Button>
@@ -41,7 +40,7 @@ export async function MenuPdfEmbed({ previewUrl, viewUrl, variant = "full" }: Pr
 
   return (
     <SectionContainer className="py-6">
-      <div className="relative mx-auto aspect-[210/297] w-full max-w-[210mm] overflow-hidden rounded-lg border border-cream/20 bg-white shadow-sm">
+      <div className="relative mx-auto aspect-[210/297] w-full max-w-[210mm] overflow-hidden rounded-lg border border-stone-200/90 bg-white shadow-sm">
         <iframe
           title={t("pdfFrameTitle")}
           src={previewUrl}
@@ -50,13 +49,7 @@ export async function MenuPdfEmbed({ previewUrl, viewUrl, variant = "full" }: Pr
         />
       </div>
       <div className="mt-6 flex justify-center">
-        <Button
-          externalHref={viewUrl}
-          variant="secondary"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="border-cream/50 text-cream hover:border-cream hover:bg-white/10 hover:text-cream focus-visible:outline-cream"
-        >
+        <Button externalHref={viewUrl} variant="secondary" target="_blank" rel="noopener noreferrer">
           {t("openInNewTab")}
         </Button>
       </div>

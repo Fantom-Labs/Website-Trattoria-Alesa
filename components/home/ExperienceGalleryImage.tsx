@@ -64,14 +64,20 @@ export function ExperienceGalleryImage({
         quality={variant === "panel" ? 95 : 100}
         className="object-cover"
       />
+      {caption ? (
+        <EditorialFigcaption
+          key="cap"
+          as="div"
+          caption={caption}
+          overlayVisible={revealed}
+          overlayTransitionDurationSec={motionTokens.galleryImageRevealDuration}
+        />
+      ) : null}
     </motion.div>,
     caption ? (
-      <EditorialFigcaption
-        key="cap"
-        caption={caption}
-        overlayVisible={revealed}
-        overlayTransitionDurationSec={motionTokens.galleryImageRevealDuration}
-      />
+      <figcaption key="a11y" className="sr-only">
+        {caption}
+      </figcaption>
     ) : null,
   );
 }

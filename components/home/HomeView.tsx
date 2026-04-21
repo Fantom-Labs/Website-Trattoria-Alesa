@@ -78,12 +78,6 @@ export async function HomeView() {
               <p className="max-w-md text-base leading-relaxed text-warm-brown sm:text-lg">
                 {t("highlightFlip.body")}
               </p>
-              <Link
-                href="/about"
-                className="mt-1 w-fit text-[10px] font-semibold uppercase tracking-[0.2em] text-steel-grey underline decoration-steel-grey/55 underline-offset-[7px] transition-colors hover:text-dark-slate hover:decoration-dark-slate/45 sm:text-[11px]"
-              >
-                {t("highlightFlip.discover")}
-              </Link>
             </SectionEnter>
           </div>
         </SectionContainer>
@@ -121,7 +115,7 @@ export async function HomeView() {
                 {t("highlight.body")}
               </p>
               <Link
-                href="/about"
+                href="/menu"
                 className="mt-1 w-fit text-[10px] font-semibold uppercase tracking-[0.2em] text-steel-grey underline decoration-steel-grey/55 underline-offset-[7px] transition-colors hover:text-dark-slate hover:decoration-dark-slate/45 sm:text-[11px]"
               >
                 {t("highlight.discover")}

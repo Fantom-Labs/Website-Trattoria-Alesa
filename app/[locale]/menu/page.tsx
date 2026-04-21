@@ -9,8 +9,8 @@ export default async function MenuPage() {
 
   return (
     <div
-      className="-mt-16 flex min-h-0 flex-1 flex-col overflow-hidden bg-dark-slate pt-16 text-cream lg:-mt-[5.5rem] lg:pt-[5.5rem]"
-      data-header-theme="light"
+      className="-mt-16 flex min-h-0 flex-1 flex-col overflow-hidden bg-cream pt-16 text-dark-slate lg:-mt-[5.5rem] lg:pt-[5.5rem]"
+      data-header-theme="brown"
     >
       <h1 className="sr-only">{t("title")}</h1>
 
@@ -22,7 +22,7 @@ export default async function MenuPage() {
         />
       ) : (
         <SectionContainer className="flex flex-1 flex-col justify-center py-12 text-center">
-          <p className="mx-auto max-w-prose text-base leading-relaxed text-cream/85">
+          <p className="mx-auto max-w-prose text-base leading-relaxed text-warm-brown">
             {t("pdfMissing")}
           </p>
         </SectionContainer>

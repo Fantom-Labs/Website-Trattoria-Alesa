@@ -3,7 +3,9 @@
     "title": "Trattoria Alesa — Trattoria italiana ad Hochzoll, Augusta",
     "description": "Calore italiano ad Augusta: ingredienti freschi, ricette di famiglia, e l’abbraccio quieto di una tavola come a casa della Nonna."
   },
-  "Skip": { "toContent": "Vai al contenuto principale" },
+  "Skip": {
+    "toContent": "Vai al contenuto principale"
+  },
   "NotFound": {
     "title": "Pagina non trovata",
     "body": "La pagina che cerchi non esiste o è stata spostata.",
@@ -49,41 +51,40 @@
       "mediaAlt": "Luce calda su una ciotola di pasta e ingredienti freschi."
     },
     "intro": {
-      "lead": "In Trattoria Alesa Gelati plasmiamo la vostra esperienza gastronomica con calore, tradizione e cura autentica.",
-      "rest": "La nostra cucina lavora con ingredienti freschi e scelti con attenzione, seguendo ricette tramandate di generazione in generazione. Qui a Hochzoll, ogni piatto porta un pezzo d’Italia ad Augusta, creando un luogo dove residenti e ospiti si incontrano."
+      "lead": "Alla Trattoria Alesa Gelati, ogni dettaglio è plasmato con calore, tradizione e cura autentica.",
+      "rest": "Cuciniamo con ingredienti freschi e scelti con cura, seguendo ricette tramandate di generazione in generazione. Qui a Hochzoll, ogni piatto porta un pezzo d’Italia ad Augusta e crea uno spazio dove residenti e ospiti si incontrano, si sentono accolti e restano ancora un po’."
     },
     "experience": {
       "title": "Tradizione che si assaggia",
       "body": "L’impasto riposa, il ragù mormora, e in cucina regna la calma. Non è spettacolo — è cura. Siediti, bevi un sorso d’acqua, lascia che la serata si allunghi.",
       "imageAlt": "Piatto in trattoria — equilibrio di colore, consistenza e sapore.",
       "imageAlt2": "Pasta fresca e dettaglio di cucina — tradizione nel piatto.",
-      "captionLeft": " / Colore, consistenza, sapore — in equilibrio silenzioso. / ",
-      "captionRight": " / Tradizione nel piatto — calore in ogni filo. / "
+      "captionLeft": "Colore, consistenza, sapore — in equilibrio silenzioso.",
+      "captionRight": "Tradizione nel piatto — calore in ogni filo."
     },
     "highlight": {
-      "eyebrow": "Trattoria & tavola",
-      "body": "Pasta tirata a mano, pizza dal forno a legna e la calma di una cucina che non ha fretta. Avvicina la sedia — abbiamo tenuto un posto per te in sala.",
-      "discover": "+ scopri di più +",
+      "eyebrow": "Il tavolo, la cucina e tutto ciò che sta in mezzo",
+      "body": "Pasta fresca, pizza al forno e piatti preparati come si deve: con tempo, attenzione e i migliori ingredienti. La nostra cucina non segue le mode. Segue la tradizione con onestà e coerenza.",
+      "discover": "Scopri il menù",
       "imageMidAlt": "Bicchieri alzati sul tavolo — un brindisi nella luce morbida.",
       "imageRightAlt": "Interno della sala — tavola apparecchiata, atmosfera tranquilla.",
-      "captionMid": " / Un pranzo da lasciare scorrere — calice, lino, tempo. / ",
-      "captionRight": " / La nostra sala nel tardo pomeriggio — semplice, calda, sincera. / "
+      "captionMid": "Piatti generosi, ingredienti freschi.",
+      "captionRight": "Cucina italiana, fatta come si deve."
     },
     "highlightFlip": {
-      "eyebrow": "Dal pass di cucina",
+      "eyebrow": "Dalla nostra cucina alla vostra tavola",
       "body": "Olio che si scalda in padella, erbe tritate fini e impasto che riposa sotto il canovaccio. Cuciniamo per il quartiere — non per gli applausi — la sala deve odorare di domenica, anche di martedì.",
-      "discover": "+ la nostra storia +",
       "imageLeftAlt": "Mani al lavoro — preparazione sul marmo.",
       "imageMidAlt": "Vapore che sale dal piatto — conforto in movimento.",
-      "captionLeft": " / Coltelli silenziosi, taglieri fermi — il giorno inizia con onestà. / ",
-      "captionMid": " / Calore, vapore, il primo cucchiaio di pazienza. / "
+      "captionLeft": "Ottimi ingredienti, preparati con tradizione.",
+      "captionMid": "Pasta fresca, sapori sinceri."
     },
     "splitScreen": {
       "ariaLabel": "Due fotografie a tutto schermo affiancate",
       "imageLeftAlt": "Atmosfera in sala — metà sinistra della vista.",
       "imageRightAlt": "Tavolo e dettagli — metà destra della vista.",
-      "captionLeft": " / Luce, lino, la sala che si apre a sinistra. / ",
-      "captionRight": " / Bicchieri, piatti, la sera che prende ritmo. / "
+      "captionLeft": "Un aperitivo per rallentare i tempi.",
+      "captionRight": "Piatti da condividere, sapori che parlano da soli."
     },
     "reviews": {
       "title": "Recensioni",

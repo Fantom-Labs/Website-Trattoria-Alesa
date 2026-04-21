@@ -3,7 +3,9 @@
     "title": "Trattoria Alesa — Italienische Trattoria in Hochzoll, Augsburg",
     "description": "Italienische Wärme in Augsburg-Hochzoll: frische Zutaten, Familienrezepte und das Gefühl von Nonnas Küche — ruhig, ehrlich, einladend."
   },
-  "Skip": { "toContent": "Zum Inhalt springen" },
+  "Skip": {
+    "toContent": "Zum Inhalt springen"
+  },
   "NotFound": {
     "title": "Seite nicht gefunden",
     "body": "Diese Seite gibt es nicht oder wurde verschoben.",
@@ -49,41 +51,40 @@
       "mediaAlt": "Warmes Licht über einer Pastaschüssel und frischen Zutaten."
     },
     "intro": {
-      "lead": "Bei Trattoria Alesa Gelati gestalten wir Ihr Esserlebnis mit Wärme, Tradition und echter Aufmerksamkeit.",
-      "rest": "Unsere Küche arbeitet mit frischen, sorgsam ausgewählten Zutaten und folgt Rezepten, die über Generationen weitergegeben wurden. Hier in Hochzoll bringt jedes Gericht ein Stück Italien nach Augsburg und schafft einen Ort, an dem Einheimische und Gäste zusammenkommen."
+      "lead": "Bei Trattoria Alesa Gelati wird jedes Detail mit Wärme, Tradition und echter Sorgfalt gestaltet.",
+      "rest": "Wir kochen mit frischen, sorgfältig ausgewählten Zutaten und folgen Rezepten, die über Generationen weitergegeben wurden. Hier in Hochzoll bringt jedes Gericht ein Stück Italien nach Augsburg und schafft einen Ort, an dem Einheimische und Gäste zusammenkommen, sich willkommen fühlen und gern etwas länger bleiben."
     },
     "experience": {
       "title": "Tradition, die man schmeckt",
       "body": "Teig darf ruhen, Ragù darf köcheln, und in der Küche bleibt es sachlich. Das ist keine Show — das ist Sorgfalt. Setzen Sie sich, trinken Sie Wasser, und lassen Sie den Abend langsam werden.",
       "imageAlt": "Gericht im Restaurant — Farbe, Textur und Geschmack im Gleichgewicht.",
       "imageAlt2": "Frische Pasta und Küchendetail — Tradition auf dem Teller.",
-      "captionLeft": " / Farbe, Textur, Geschmack — in ruhigem Gleichgewicht. / ",
-      "captionRight": " / Tradition auf dem Teller — Wärme in jedem Bissen. / "
+      "captionLeft": "Farbe, Textur, Geschmack — in ruhigem Gleichgewicht.",
+      "captionRight": "Tradition auf dem Teller — Wärme in jedem Bissen."
     },
     "highlight": {
-      "eyebrow": "Trattoria & Tisch",
-      "body": "Frische Pasta, Pizza aus dem Holzofen und die ruhige Sicherheit einer Küche, die nicht hetzt. Ziehen Sie den Stuhl heran — wir haben Ihnen einen Platz im Raum frei.",
-      "discover": "+ mehr entdecken +",
+      "eyebrow": "Der Tisch, die Küche und alles dazwischen",
+      "body": "Frische Pasta, Pizza aus dem Ofen und Gerichte, so wie sie sein sollten: mit Zeit, Aufmerksamkeit und den besten Zutaten. Unsere Küche setzt nicht auf Trends. Sie folgt der Tradition mit Ehrlichkeit und Beständigkeit.",
+      "discover": "Die Speisekarte entdecken",
       "imageMidAlt": "Gläser über dem Tisch — ein Toast im weichen Licht.",
       "imageRightAlt": "Innenraum des Restaurants — gedeckter Tisch, ruhige Atmosphäre.",
-      "captionMid": " / Ein Mittagessen, das bleiben darf — Glas, Leinen, Zeit. / ",
-      "captionRight": " / Unser Raum am späten Nachmittag — schlicht, warm, ehrlich. / "
+      "captionMid": "Großzügige Teller, frische Zutaten.",
+      "captionRight": "Italienische Küche, richtig gemacht."
     },
     "highlightFlip": {
-      "eyebrow": "Vom Küchenpass",
+      "eyebrow": "Von unserer Küche zu Ihrem Tisch",
       "body": "Olivenöl im Topf, fein gehackte Kräuter, Teig unter dem Tuch. Wir kochen für die Nachbarschaft — nicht für Applaus — die Stube soll sich anfühlen wie Sonntag, auch unter der Woche.",
-      "discover": "+ unsere Geschichte lesen +",
       "imageLeftAlt": "Hände in der Arbeit — Vorbereitung auf dem Marmor.",
       "imageMidAlt": "Dampf über dem Teller — Trost in Bewegung.",
-      "captionLeft": " / Messer leise, Bretter ruhig — der Tag beginnt ehrlich. / ",
-      "captionMid": " / Hitze, Dampf, der erste Löffel Geduld. / "
+      "captionLeft": "Gute Zutaten, mit Tradition zubereitet.",
+      "captionMid": "Frische Pasta, ehrliche Aromen."
     },
     "splitScreen": {
       "ariaLabel": "Zwei Vollbildfotos nebeneinander",
       "imageLeftAlt": "Stimmung im Restaurant — linke Hälfte der Ansicht.",
       "imageRightAlt": "Tisch und Details — rechte Hälfte der Ansicht.",
-      "captionLeft": " / Licht, Leinen, der Raum öffnet sich nach links. / ",
-      "captionRight": " / Gläser, Teller, der Abend nimmt Tempo auf. / "
+      "captionLeft": "Ein Aperitivo, das alles etwas langsamer werden lässt.",
+      "captionRight": "Teller zum Teilen — Aromen, die für sich sprechen."
     },
     "reviews": {
       "title": "Bewertungen",

@@ -3,7 +3,9 @@
     "title": "Trattoria Alesa — Italian trattoria in Hochzoll, Augsburg",
     "description": "Warm Italian cooking in Augsburg-Hochzoll: fresh ingredients, family recipes, and the feeling of Nonna’s table."
   },
-  "Skip": { "toContent": "Skip to main content" },
+  "Skip": {
+    "toContent": "Skip to main content"
+  },
   "NotFound": {
     "title": "Page not found",
     "body": "The page you are looking for does not exist or has moved.",
@@ -49,41 +51,40 @@
       "mediaAlt": "Warm light over a bowl of pasta and fresh ingredients."
     },
     "intro": {
-      "lead": "At Trattoria Alesa Gelati, we shape your dining experience with warmth, tradition, and genuine care.",
-      "rest": "Our kitchen works with fresh, carefully selected ingredients, following recipes passed down through generations. Here in Hochzoll, every dish brings a piece of Italy to Augsburg, creating a place where locals and guests come together."
+      "lead": "At Trattoria Alesa Gelati, every detail is shaped with warmth, tradition, and genuine care.",
+      "rest": "We cook with fresh, carefully selected ingredients, following recipes passed down through generations. Here in Hochzoll, each dish brings a piece of Italy to Augsburg, creating a place where locals and guests come together, feel welcome, and stay a little longer."
     },
     "experience": {
       "title": "Tradition you can taste",
       "body": "Our dough rests, our ragù simmers, and our kitchen stays calm. It is not performance — it is care. Pull up a chair, pour some water, and let the room do the rest.",
       "imageAlt": "Restaurant dish — colour, texture, and flavour in balance.",
       "imageAlt2": "Fresh pasta and kitchen detail — tradition on the plate.",
-      "captionLeft": " / Colour, texture, and flavour — held in quiet balance. / ",
-      "captionRight": " / Tradition on the plate — warmth in every strand. / "
+      "captionLeft": "Colour, texture, and flavour — held in quiet balance.",
+      "captionRight": "Tradition on the plate — warmth in every strand."
     },
     "highlight": {
-      "eyebrow": "Trattoria & table",
-      "body": "Hand‑rolled pasta, pizza from the wood oven, and the quiet confidence of a kitchen that is not in a hurry. Pull up a chair — we saved you a place in the room.",
-      "discover": "+ discover more +",
+      "eyebrow": "The Table, the Kitchen, and Everything Between",
+      "body": "Fresh pasta, baked pizzas, and dishes prepared the way they should be: with time, attention, and the best ingredients. Our kitchen doesn't chase trends. It follows tradition with honesty and consistency.",
+      "discover": "Discover the menu",
       "imageMidAlt": "Glasses raised over the table — a toast in soft light.",
       "imageRightAlt": "Interior of the dining room — table set, calm atmosphere.",
-      "captionMid": " / A lunch worth lingering over — glass, linen, and time. / ",
-      "captionRight": " / Our room in the late afternoon — simple, warm, honest. / "
+      "captionMid": "Generous plates, fresh ingredients.",
+      "captionRight": "Italian cooking, done right."
     },
     "highlightFlip": {
-      "eyebrow": "From the kitchen pass",
+      "eyebrow": "From Our Kitchen to Your Table",
       "body": "Olive oil warming in the pan, herbs chopped fine, and dough resting under a cloth. We cook for neighbours, not for applause — the room should feel like Sunday, even on a Tuesday.",
-      "discover": "+ read our story +",
       "imageLeftAlt": "Hands at work — prep on the marble counter.",
       "imageMidAlt": "Steam rising from a plate — comfort in motion.",
-      "captionLeft": " / Knives quiet, boards steady — the day begins honestly. / ",
-      "captionMid": " / Heat, steam, and the first spoonful of patience. / "
+      "captionLeft": "Nice ingredients, prepared with tradition.",
+      "captionMid": "Fresh pasta, honest flavors."
     },
     "splitScreen": {
       "ariaLabel": "Two full-screen photographs side by side",
       "imageLeftAlt": "Restaurant atmosphere — left half of the panoramic view.",
       "imageRightAlt": "Table and details — right half of the panoramic view.",
-      "captionLeft": " / Light, linen, and the room opening to the left. / ",
-      "captionRight": " / Glasses, plates, and the evening gathering pace. / "
+      "captionLeft": "An aperitivo to slow things down.",
+      "captionRight": "Plates to share, flavors that speak for themselves."
     },
     "reviews": {
       "title": "Reviews",
