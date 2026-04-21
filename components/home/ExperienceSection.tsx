@@ -1,9 +1,14 @@
 import { SectionContainer } from "@/components/layout/SectionContainer";
 import { Divider } from "@/components/layout/Divider";
 import { ExperienceGalleryImage } from "@/components/home/ExperienceGalleryImage";
+import { ENABLE_ABOUT_EXPERIENCE_SECTION } from "@/lib/featureFlags";
 import { getTranslations } from "next-intl/server";
 
 export async function ExperienceSection() {
+  if (!ENABLE_ABOUT_EXPERIENCE_SECTION) {
+    return null;
+  }
+
   const t = await getTranslations("Home");
 
   return (

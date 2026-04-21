@@ -150,17 +150,16 @@ export function SiteHeader() {
             </div>
           </div>
 
-          {/* Mobile */}
-          <div className="flex h-full w-full items-center justify-between gap-2 lg:hidden">
-            <LocaleSwitcher onDarkSection={onDarkSection} />
-            <Link href="/" className="min-w-0 flex-1 px-2 text-center">
+          {/* Mobile: logo à esquerda, menu à direita; idioma só no painel MobileMenu */}
+          <div className="flex h-full w-full items-center justify-between gap-3 lg:hidden">
+            <Link href="/" className="inline-flex min-w-0 shrink items-center pr-2">
               <Image
                 key={logoSrc}
                 src={logoSrc}
                 alt={t("logoAlt")}
                 width={175}
                 height={56}
-                className="mx-auto h-[calc(2.8125rem*0.7)] w-auto max-w-[min(60vw,calc(12.5rem*0.7))] object-contain"
+                className="h-[calc(2.8125rem*0.7)] w-auto max-w-[min(55vw,calc(12.5rem*0.7))] object-contain object-left"
                 priority
                 unoptimized
               />

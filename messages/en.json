@@ -49,7 +49,8 @@
       "mediaAlt": "Warm light over a bowl of pasta and fresh ingredients."
     },
     "intro": {
-      "body": "At Trattoria Alesa Gelati, we shape your dining experience with warmth, tradition, and genuine care. Our kitchen works with fresh, carefully selected ingredients, following recipes passed down through generations. Here in Hochzoll, every dish brings a piece of Italy to Augsburg, creating a place where locals and guests come together."
+      "lead": "At Trattoria Alesa Gelati, we shape your dining experience with warmth, tradition, and genuine care.",
+      "rest": "Our kitchen works with fresh, carefully selected ingredients, following recipes passed down through generations. Here in Hochzoll, every dish brings a piece of Italy to Augsburg, creating a place where locals and guests come together."
     },
     "experience": {
       "title": "Tradition you can taste",
@@ -111,6 +112,11 @@
   "About": {
     "hero": {
       "mediaAlt": "Warm dining scene at Trattoria Alesa — the same spirit as our table at home."
+    },
+    "split": {
+      "heading": "ABOUT TRATTORIA ALESA",
+      "body": "Italian hospitality in Hochzoll — Trattoria Alesa brings together family recipes, fresh ingredients, and the quiet rhythm of a true trattoria. We honour slow cooking and simple plates: pasta made with care, pizza from the oven, and the small rituals that make dinner feel like home. Between Augsburg and Italy, we keep the table open for neighbours, guests, and anyone who loves honest flavours.",
+      "imageAlt": "Outdoor terrace at Trattoria Alesa — tables set for guests in the sun."
     }
   },
   "Menu": {
@@ -121,16 +127,22 @@
   },
   "Contact": {
     "title": "Contact",
-    "intro": "We are easy to find in Hochzoll — write, call, or simply walk in when we are open.",
+    "headlineLine1": "WE'RE HERE",
+    "headlineLine2": "TO HELP YOU",
+    "infoBlockTitle": "TRATTORIA ALESA",
+    "infoBlockSubtitle": "We are easy to find in Hochzoll — write, call, or simply walk in when we are open.",
     "addressLabel": "Address",
     "addressLines": "Trattoria Alesa\nExemplestraße 12\n86163 Augsburg",
     "phoneLabel": "Phone",
-    "phone": "+49 821 000 00 00",
+    "phone": "+49 (821) 71009699",
     "emailLabel": "Email",
-    "email": "hello@trattoria-alesa.example",
+    "email": "alesa-trattoria@web.de",
     "hoursLabel": "Opening hours",
     "hours": "Tue–Sun 11:30–14:30 · 17:30–22:30\nClosed Mondays",
-    "note": "For reservations, WhatsApp is fastest — we keep the line clear for guests in the dining room."
+    "note": "For reservations, WhatsApp is fastest — we keep the line clear for guests in the dining room.",
+    "mapLabel": "Map",
+    "mapFrameTitle": "Google Maps — how to find us",
+    "openMapInGoogle": "Open in Google Maps"
   },
   "Reservations": {
     "title": "Reservations",

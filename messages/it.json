@@ -49,7 +49,8 @@
       "mediaAlt": "Luce calda su una ciotola di pasta e ingredienti freschi."
     },
     "intro": {
-      "body": "In Trattoria Alesa Gelati plasmiamo la vostra esperienza gastronomica con calore, tradizione e cura autentica. La nostra cucina lavora con ingredienti freschi e scelti con attenzione, seguendo ricette tramandate di generazione in generazione. Qui a Hochzoll, ogni piatto porta un pezzo d’Italia ad Augusta, creando un luogo dove residenti e ospiti si incontrano."
+      "lead": "In Trattoria Alesa Gelati plasmiamo la vostra esperienza gastronomica con calore, tradizione e cura autentica.",
+      "rest": "La nostra cucina lavora con ingredienti freschi e scelti con attenzione, seguendo ricette tramandate di generazione in generazione. Qui a Hochzoll, ogni piatto porta un pezzo d’Italia ad Augusta, creando un luogo dove residenti e ospiti si incontrano."
     },
     "experience": {
       "title": "Tradizione che si assaggia",
@@ -111,6 +112,11 @@
   "About": {
     "hero": {
       "mediaAlt": "Scena conviviale calda in Trattoria Alesa — lo stesso spirito del nostro tavolo di casa."
+    },
+    "split": {
+      "heading": "SU TRATTORIA ALESA",
+      "body": "L’ospitalità italiana a Hochzoll: alla Trattoria Alesa si incontrano ricette di famiglia, ingredienti freschi e il ritmo quieto di una vera trattoria. Rispettiamo la cottura lenta e i piatti semplici — pasta fatta con cura, pizza dal forno e i piccoli rituali che fanno sentire a casa. Tra Augusta e l’Italia teniamo la tavola aperta per vicini, ospiti e chi ama sapori sinceri.",
+      "imageAlt": "Terrazza esterna della Trattoria Alesa — tavoli apparecchiati al sole."
     }
   },
   "Menu": {
@@ -121,16 +127,22 @@
   },
   "Contact": {
     "title": "Contatti",
-    "intro": "Siamo facili da trovare a Hochzoll — scrivi, chiamaci, oppure passa quando siamo aperti.",
+    "headlineLine1": "SIAMO QUI",
+    "headlineLine2": "PER VOI",
+    "infoBlockTitle": "TRATTORIA ALESA",
+    "infoBlockSubtitle": "Siamo facili da trovare a Hochzoll — scrivi, chiamaci, oppure passa quando siamo aperti.",
     "addressLabel": "Indirizzo",
     "addressLines": "Trattoria Alesa\nExemplestraße 12\n86163 Augusta",
     "phoneLabel": "Telefono",
-    "phone": "+49 821 000 00 00",
+    "phone": "+49 (821) 71009699",
     "emailLabel": "Email",
-    "email": "hello@trattoria-alesa.example",
+    "email": "alesa-trattoria@web.de",
     "hoursLabel": "Orari",
     "hours": "Mar–Dom 11:30–14:30 · 17:30–22:30\nLunedì chiuso",
-    "note": "Per prenotare, WhatsApp è la via più rapida — così la linea resta libera per chi è in sala."
+    "note": "Per prenotare, WhatsApp è la via più rapida — così la linea resta libera per chi è in sala.",
+    "mapLabel": "Mappa",
+    "mapFrameTitle": "Google Maps — come trovarci",
+    "openMapInGoogle": "Apri in Google Maps"
   },
   "Reservations": {
     "title": "Prenotazioni",

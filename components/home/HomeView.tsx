@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { HeroSection } from "@/components/home/HeroSection";
 import { SectionContainer } from "@/components/layout/SectionContainer";
 import { Divider } from "@/components/layout/Divider";
@@ -10,19 +9,24 @@ import { getTranslations } from "next-intl/server";
 
 export async function HomeView() {
   const t = await getTranslations("Home");
+  const tNav = await getTranslations("Nav");
 
   return (
     <>
       <HeroSection
+        mobileIntroLead={t("intro.lead")}
+        mobileBookingLabel={tNav("booking")}
         media={
           <div className="relative h-full min-h-full w-full">
-            <Image
-              src="/images/hero.png"
-              alt={t("hero.mediaAlt")}
-              fill
-              priority
-              className="object-cover"
-              sizes="100vw"
+            <video
+              className="absolute inset-0 h-full w-full object-cover"
+              src="/videos/video-hero.mp4"
+              autoPlay
+              muted
+              loop
+              playsInline
+              preload="auto"
+              aria-label={t("hero.mediaAlt")}
             />
           </div>
         }
@@ -37,7 +41,10 @@ export async function HomeView() {
         <SectionContainer>
           <SectionEnter className="max-w-none text-left sm:max-w-[50vw]">
             <p className="text-2xl font-normal leading-8 tracking-normal text-warm-brown">
-              {t("intro.body")}
+              <span className="lg:hidden">{t("intro.rest")}</span>
+              <span className="hidden lg:inline">
+                {t("intro.lead")} {t("intro.rest")}
+              </span>
             </p>
           </SectionEnter>
         </SectionContainer>
@@ -84,22 +91,22 @@ export async function HomeView() {
 
       <section
         data-header-theme="brown"
-        className="grid h-dvh w-full grid-cols-2 gap-0 overflow-hidden"
+        className="grid w-full grid-cols-1 auto-rows-[100dvh] gap-0 overflow-hidden lg:h-dvh lg:grid-cols-2 lg:grid-rows-1"
         aria-label={t("splitScreen.ariaLabel")}
       >
         <EditorialCoverImage
-          className="h-full w-full"
+          className="h-full min-h-[100dvh] w-full lg:min-h-0"
           src="/images/img-5.png"
           alt={t("splitScreen.imageLeftAlt")}
           caption={t("splitScreen.captionLeft")}
-          sizes="50vw"
+          sizes="(max-width: 1023px) 100vw, 50vw"
         />
         <EditorialCoverImage
-          className="h-full w-full"
+          className="h-full min-h-[100dvh] w-full lg:min-h-0"
           src="/images/img-9.png"
           alt={t("splitScreen.imageRightAlt")}
           caption={t("splitScreen.captionRight")}
-          sizes="50vw"
+          sizes="(max-width: 1023px) 100vw, 50vw"
         />
       </section>
 

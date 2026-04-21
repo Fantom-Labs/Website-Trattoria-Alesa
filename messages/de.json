@@ -49,7 +49,8 @@
       "mediaAlt": "Warmes Licht über einer Pastaschüssel und frischen Zutaten."
     },
     "intro": {
-      "body": "Bei Trattoria Alesa Gelati gestalten wir Ihr Esserlebnis mit Wärme, Tradition und echter Aufmerksamkeit. Unsere Küche arbeitet mit frischen, sorgsam ausgewählten Zutaten und folgt Rezepten, die über Generationen weitergegeben wurden. Hier in Hochzoll bringt jedes Gericht ein Stück Italien nach Augsburg und schafft einen Ort, an dem Einheimische und Gäste zusammenkommen."
+      "lead": "Bei Trattoria Alesa Gelati gestalten wir Ihr Esserlebnis mit Wärme, Tradition und echter Aufmerksamkeit.",
+      "rest": "Unsere Küche arbeitet mit frischen, sorgsam ausgewählten Zutaten und folgt Rezepten, die über Generationen weitergegeben wurden. Hier in Hochzoll bringt jedes Gericht ein Stück Italien nach Augsburg und schafft einen Ort, an dem Einheimische und Gäste zusammenkommen."
     },
     "experience": {
       "title": "Tradition, die man schmeckt",
@@ -111,6 +112,11 @@
   "About": {
     "hero": {
       "mediaAlt": "Warmes Ambiente in der Trattoria Alesa — derselbe Geist wie an unserem Tisch zu Hause."
+    },
+    "split": {
+      "heading": "ÜBER TRATTORIA ALESA",
+      "body": "Italienische Gastfreundschaft in Hochzoll: In der Trattoria Alesa treffen Familienrezepte, frische Zutaten und der ruhige Rhythmus einer echten Trattoria aufeinander. Wir ehren langsames Kochen und schlichte Teller — Pasta mit Sorgfalt, Pizza aus dem Ofen und die kleinen Rituale, die ein Essen wie zu Hause wirken lassen. Zwischen Augsburg und Italien halten wir den Tisch offen für Nachbarn, Gäste und alle, die ehrliche Aromen mögen.",
+      "imageAlt": "Terrasse der Trattoria Alesa — gedeckte Tische in der Sonne."
     }
   },
   "Menu": {
@@ -121,16 +127,22 @@
   },
   "Contact": {
     "title": "Kontakt",
-    "intro": "In Hochzoll sind wir schnell gefunden — schreiben, anrufen oder vorbeikommen, wenn wir geöffnet haben.",
+    "headlineLine1": "WIR SIND DA",
+    "headlineLine2": "FÜR SIE",
+    "infoBlockTitle": "TRATTORIA ALESA",
+    "infoBlockSubtitle": "In Hochzoll sind wir schnell gefunden — schreiben, anrufen oder vorbeikommen, wenn wir geöffnet haben.",
     "addressLabel": "Adresse",
     "addressLines": "Trattoria Alesa\nExemplestraße 12\n86163 Augsburg",
     "phoneLabel": "Telefon",
-    "phone": "+49 821 000 00 00",
+    "phone": "+49 (821) 71009699",
     "emailLabel": "E‑Mail",
-    "email": "hello@trattoria-alesa.example",
+    "email": "alesa-trattoria@web.de",
     "hoursLabel": "Öffnungszeiten",
     "hours": "Di–So 11:30–14:30 · 17:30–22:30\nMontag Ruhetag",
-    "note": "Für Reservierungen ist WhatsApp am schnellsten — damit bleibt die Leitung für Gäste im Saal frei."
+    "note": "Für Reservierungen ist WhatsApp am schnellsten — damit bleibt die Leitung für Gäste im Saal frei.",
+    "mapLabel": "Karte",
+    "mapFrameTitle": "Google Maps — Anfahrt",
+    "openMapInGoogle": "In Google Maps öffnen"
   },
   "Reservations": {
     "title": "Reservierungen",

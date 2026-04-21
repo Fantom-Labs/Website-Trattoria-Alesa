@@ -8,17 +8,21 @@ export default async function MenuPage() {
   const driveMenu = getMenuDrivePdfEmbed();
 
   return (
-    <div className="bg-cream pb-24 pt-10 sm:pt-14" data-header-theme="brown">
-      <SectionContainer className="pb-10 text-center">
-        <h1 className="text-[18px] font-bold uppercase leading-relaxed tracking-normal text-steel-grey">
-          {t("title")}
-        </h1>
-      </SectionContainer>
+    <div
+      className="-mt-16 flex min-h-dvh flex-1 flex-col bg-dark-slate pt-16 text-cream lg:-mt-[5.5rem] lg:pt-[5.5rem]"
+      data-header-theme="light"
+    >
+      <h1 className="sr-only">{t("title")}</h1>
+
       {driveMenu ? (
-        <MenuPdfEmbed previewUrl={driveMenu.previewUrl} viewUrl={driveMenu.viewUrl} />
+        <MenuPdfEmbed
+          variant="full"
+          previewUrl={driveMenu.previewUrl}
+          viewUrl={driveMenu.viewUrl}
+        />
       ) : (
-        <SectionContainer className="py-6 text-center">
-          <p className="mx-auto max-w-prose text-base leading-relaxed text-warm-brown">
+        <SectionContainer className="flex flex-1 flex-col justify-center py-12 text-center">
+          <p className="mx-auto max-w-prose text-base leading-relaxed text-cream/85">
             {t("pdfMissing")}
           </p>
         </SectionContainer>

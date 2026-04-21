@@ -1,3 +1,4 @@
+import { AboutSplitIntro } from "@/components/about/AboutSplitIntro";
 import { HeroSection } from "@/components/home/HeroSection";
 import { ExperienceSection } from "@/components/home/ExperienceSection";
 import { TestimonialSection } from "@/components/ui/testimonial-section";
@@ -25,6 +26,12 @@ export default async function AboutPage() {
             />
           </div>
         }
+      />
+
+      <AboutSplitIntro
+        heading={t("split.heading")}
+        body={t("split.body")}
+        imageAlt={t("split.imageAlt")}
       />
 
       <ExperienceSection />

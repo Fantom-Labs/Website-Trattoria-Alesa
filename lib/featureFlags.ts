@@ -4,3 +4,6 @@
  * Definir `true` para reativar sem alterar o resto do fluxo.
  */
 export const ENABLE_HOME_SCROLL_ASSIST = false;
+
+/** Secção “Tradition you can taste” (grelha 3 colunas) na página About. */
+export const ENABLE_ABOUT_EXPERIENCE_SECTION = false;

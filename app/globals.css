@@ -37,7 +37,6 @@ html[data-header-theme="dapietro"] {
   --color-dark-slate: var(--brand-dark-slate);
   --color-cream: var(--brand-cream);
   --font-sans: var(--font-body);
-  --font-display: var(--font-display);
   --breakpoint-xs: 22rem;
 }
 

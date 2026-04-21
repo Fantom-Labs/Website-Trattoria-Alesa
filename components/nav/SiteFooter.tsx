@@ -13,7 +13,7 @@ export async function SiteFooter() {
     <footer className="footer-themed mt-auto border-t border-white/10">
       <SectionContainer className="grid gap-10 py-14 sm:grid-cols-2 lg:grid-cols-4">
         <div className="min-w-0 space-y-3">
-          <p className="font-display text-xl tracking-wide">{t("brand")}</p>
+          <p className="font-sans text-xl font-semibold uppercase tracking-wide">{t("brand")}</p>
           <p className="text-sm leading-relaxed text-cream/80">{t("tagline")}</p>
         </div>
         <div className="min-w-0 space-y-3">

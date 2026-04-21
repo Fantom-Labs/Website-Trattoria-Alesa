@@ -8,7 +8,9 @@ export default async function NotFound() {
   return (
     <div className="bg-cream py-24" data-header-theme="brown">
       <SectionContainer className="space-y-6 text-left">
-        <h1 className="font-display text-4xl text-dark-slate">{t("title")}</h1>
+        <h1 className="font-sans text-4xl font-semibold uppercase tracking-wide text-dark-slate">
+          {t("title")}
+        </h1>
         <p className="text-warm-brown">{t("body")}</p>
         <Button href="/">{t("home")}</Button>
       </SectionContainer>

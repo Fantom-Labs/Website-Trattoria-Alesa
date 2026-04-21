@@ -66,13 +66,13 @@ export function MobileMenu({ open, onClose }: Props) {
         >
           <button
             type="button"
-            className="absolute inset-0"
+            className="absolute inset-0 z-0 cursor-pointer"
             aria-label={t("closeMenu")}
             onClick={onClose}
           />
           <motion.nav
             id="mobile-menu-panel"
-            className="absolute inset-x-0 top-0 max-h-dvh min-h-dvh overflow-y-auto border-b border-stone-200 bg-white px-4 pb-10 pt-6 text-[#333333] shadow-xl sm:px-6 lg:px-8"
+            className="absolute inset-x-0 top-0 z-10 max-h-dvh min-h-dvh overflow-y-auto border-b border-stone-200 bg-white px-4 pb-10 pt-6 text-[#333333] shadow-xl sm:px-6 lg:px-8"
             initial={reduce ? false : { y: "-100%" }}
             animate={{ y: 0 }}
             exit={{ y: "-100%" }}
@@ -85,18 +85,29 @@ export function MobileMenu({ open, onClose }: Props) {
               {t("menuTitle")}
             </p>
 
-            <div className="mb-8 flex justify-start border-b border-stone-100 pb-6">
-              <Link href="/" onClick={onClose}>
+            <div className="mb-8 flex items-center justify-between gap-4 border-b border-stone-100 pb-6">
+              <Link href="/" onClick={onClose} className="min-w-0 shrink">
                 <Image
                   src="/logo.svg"
                   alt={t("logoAlt")}
                   width={200}
                   height={64}
-                  className="h-10 w-auto object-contain"
+                  className="h-10 w-auto object-contain object-left"
                   priority
                   unoptimized
                 />
               </Link>
+              <button
+                type="button"
+                onClick={onClose}
+                className="shrink-0 rounded-md p-2.5 text-[#333333] transition-colors hover:bg-stone-100"
+                aria-label={t("closeMenu")}
+              >
+                <span className="relative block h-5 w-5" aria-hidden>
+                  <span className="absolute left-1/2 top-1/2 block h-0.5 w-5 -translate-x-1/2 -translate-y-1/2 rotate-45 rounded-full bg-current" />
+                  <span className="absolute left-1/2 top-1/2 block h-0.5 w-5 -translate-x-1/2 -translate-y-1/2 -rotate-45 rounded-full bg-current" />
+                </span>
+              </button>
             </div>
 
             <ul className="flex flex-col gap-0.5">

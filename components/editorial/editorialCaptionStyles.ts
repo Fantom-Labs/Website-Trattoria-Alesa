@@ -7,4 +7,4 @@ export const editorialFigcaptionClassName = cn(
   "px-5 pb-5 pt-20 text-left text-sm leading-snug text-white sm:px-6 sm:pb-6 sm:text-base",
 );
 
-export const editorialCaptionTextClassName = "font-display italic tracking-wide";
+export const editorialCaptionTextClassName = "font-sans italic tracking-wide";

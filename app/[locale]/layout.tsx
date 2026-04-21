@@ -8,7 +8,7 @@ import { HeaderThemeBridge } from "@/hooks/useHeaderTheme";
 import { routing } from "@/i18n/routing";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages, getTranslations, setRequestLocale } from "next-intl/server";
-import { DM_Sans, Cormorant_Garamond } from "next/font/google";
+import { DM_Sans } from "next/font/google";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
@@ -16,12 +16,6 @@ import type { ReactNode } from "react";
 const body = DM_Sans({
   subsets: ["latin"],
   variable: "--font-body",
-  display: "swap",
-});
-
-const display = Cormorant_Garamond({
-  subsets: ["latin"],
-  variable: "--font-display",
   display: "swap",
 });
 
@@ -62,7 +56,7 @@ export default async function LocaleLayout({ children, params }: Props) {
     <html
       lang={locale}
       data-header-theme="light"
-      className={`${body.variable} ${display.variable} h-full scroll-smooth`}
+      className={`${body.variable} h-full scroll-smooth`}
       suppressHydrationWarning
     >
       <body className="flex min-h-dvh flex-col bg-cream font-sans text-dark-slate">
@@ -76,7 +70,10 @@ export default async function LocaleLayout({ children, params }: Props) {
             >
               {tSkip("toContent")}
             </a>
-            <main id="main-content" className="flex-1 pt-16 lg:pt-[5.5rem]">
+            <main
+              id="main-content"
+              className="flex min-h-0 flex-1 flex-col pt-16 lg:pt-[5.5rem]"
+            >
               {children}
             </main>
           </HeaderThemeBridge>

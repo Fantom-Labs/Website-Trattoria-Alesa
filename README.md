@@ -31,7 +31,7 @@ Stakeholders não técnicos se importam com clareza e confiança; a implementaç
 | Qualidade | **ESLint** (config Next.js) |
 | Deploy | **Netlify** (`@netlify/plugin-nextjs` em devDependencies — runtime Next na Netlify) |
 
-A tipografia usa **`next/font/google`**: **DM Sans** (corpo) e **Cormorant Garamond** (display), carregadas com `display: "swap"` para limitar layout shift.
+A tipografia usa **`next/font/google`**: **DM Sans** (única família — corpo e títulos em maiúsculas onde aplicável), com `display: "swap"` para limitar layout shift.
 
 ---
 
@@ -118,7 +118,7 @@ Non-technical stakeholders care about clarity and trust; the implementation prio
 | Quality | **ESLint** (Next.js config) |
 | Deploy | **Netlify** (`@netlify/plugin-nextjs` in devDependencies — Next runtime on Netlify) |
 
-Typography uses **`next/font/google`**: **DM Sans** (body) and **Cormorant Garamond** (display), loaded with `display: "swap"` to limit layout shift.
+Typography uses **`next/font/google`**: **DM Sans** only (body and uppercase headings where used), loaded with `display: "swap"` to limit layout shift.
 
 ---
 
