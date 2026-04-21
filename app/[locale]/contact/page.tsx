@@ -19,7 +19,8 @@ export default async function ContactPage() {
               src="/images/img-1.png"
               alt={tAbout("hero.mediaAlt")}
               fill
-              sizes="100vw"
+              sizes="(max-width: 1023px) max(100vw, 100vh), 100vw"
+              quality={90}
               className="object-cover"
               priority
             />

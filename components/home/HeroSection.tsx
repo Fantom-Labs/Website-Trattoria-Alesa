@@ -30,7 +30,7 @@ export function HeroSection({ media, mobileIntroLead, mobileBookingLabel }: Prop
           <Button
             href="/reservations"
             variant="primary"
-            className="w-[75vw] max-w-full rounded-none"
+            className="w-full rounded-none"
           >
             {mobileBookingLabel}
           </Button>
