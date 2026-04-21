@@ -27,7 +27,7 @@ export async function MenuPdfEmbed({ previewUrl, viewUrl }: Props) {
           rel="noopener noreferrer"
           className="font-medium text-dark-slate underline decoration-warm-brown/40 underline-offset-4 hover:decoration-dark-slate"
         >
-          {t("openInDrive")}
+          {t("openInNewTab")}
         </a>
       </p>
     </SectionContainer>

@@ -12,7 +12,7 @@ export async function ExperienceSection() {
         <div className="order-1 flex min-w-0 w-full flex-col lg:min-h-0">
           <div className="mx-auto w-[80%] min-w-0">
             <ExperienceGalleryImage
-              src="/images/img-1.png"
+              src="/images/img-10.png"
               alt={t("experience.imageAlt")}
               caption={t("experience.captionLeft")}
             />
@@ -20,7 +20,7 @@ export async function ExperienceSection() {
         </div>
 
         <div className="order-2 flex min-w-0 w-full flex-col items-center justify-center space-y-5 py-2 text-center lg:order-2 lg:min-h-0 lg:self-stretch lg:py-0">
-          <h2 className="max-w-lg font-sans text-3xl font-semibold tracking-wide text-steel-grey sm:text-[32px]">
+          <h2 className="max-w-lg text-[18px] font-bold uppercase leading-relaxed tracking-normal text-steel-grey">
             {t("experience.title")}
           </h2>
           <Divider className="mx-auto w-full max-w-md" />

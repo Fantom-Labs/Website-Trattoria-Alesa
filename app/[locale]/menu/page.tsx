@@ -10,7 +10,7 @@ export default async function MenuPage() {
   return (
     <div className="bg-cream pb-24 pt-10 sm:pt-14" data-header-theme="brown">
       <SectionContainer className="pb-10 text-center">
-        <h1 className="font-display text-4xl tracking-wide text-dark-slate sm:text-5xl">
+        <h1 className="text-[18px] font-bold uppercase leading-relaxed tracking-normal text-steel-grey">
           {t("title")}
         </h1>
       </SectionContainer>

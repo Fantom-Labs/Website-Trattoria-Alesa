@@ -1,6 +1,11 @@
+"use client";
+
 import { EditorialFigcaption } from "@/components/editorial/EditorialFigcaption";
+import { useInViewOnce } from "@/hooks/useInViewOnce";
 import { cn } from "@/lib/utils";
+import { motion as motionTokens } from "@/lib/tokens";
 import Image from "next/image";
+import { useReducedMotion } from "framer-motion";
 
 type Props = {
   src: string;
@@ -12,8 +17,10 @@ type Props = {
 };
 
 /**
- * Imagem de capa com legenda editorial (mesmo padrão das galerias com animação).
- * Sem motion — usar onde `ExperienceGalleryImage` não se aplica.
+ * Imagem de capa com legenda editorial (ex.: split screen na home).
+ * Sem scale — a legenda/gradiente só aparece após entrada em vista (como nas
+ * galerias com `ExperienceGalleryImage`), para não mostrar o bloco escuro
+ * antes do enquadramento.
  */
 export function EditorialCoverImage({
   src,
@@ -23,8 +30,14 @@ export function EditorialCoverImage({
   className,
   priority,
 }: Props) {
+  const reduce = useReducedMotion();
+  const { ref, inView } = useInViewOnce({
+    revealDelayMs: motionTokens.galleryImageRevealDelayMs,
+  });
+  const revealed = reduce || inView;
+
   return (
-    <figure className={cn("relative min-h-0 min-w-0 overflow-hidden", className)}>
+    <figure ref={ref} className={cn("relative min-h-0 min-w-0 overflow-hidden", className)}>
       <div className="absolute inset-0">
         <Image
           src={src}
@@ -35,7 +48,11 @@ export function EditorialCoverImage({
           priority={priority}
         />
       </div>
-      <EditorialFigcaption caption={caption} />
+      <EditorialFigcaption
+        caption={caption}
+        overlayVisible={revealed}
+        overlayTransitionDurationSec={motionTokens.galleryImageRevealDuration}
+      />
     </figure>
   );
 }

@@ -116,7 +116,7 @@
   "Menu": {
     "title": "Speisekarte",
     "pdfFrameTitle": "Speisekarte (PDF)",
-    "openInDrive": "In Google Drive öffnen (neuer Tab)",
+    "openInNewTab": "In neuem Tab öffnen",
     "pdfMissing": "Das Menü-PDF ist noch nicht verknüpft. Bitte schauen Sie später wieder vorbei."
   },
   "Contact": {

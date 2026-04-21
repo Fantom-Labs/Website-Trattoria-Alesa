@@ -116,7 +116,7 @@
   "Menu": {
     "title": "Menu",
     "pdfFrameTitle": "Menu PDF",
-    "openInDrive": "Apri su Google Drive (nuova scheda)",
+    "openInNewTab": "Apri in nuova scheda",
     "pdfMissing": "Il PDF del menu non è ancora collegato. Torna a trovarci tra poco."
   },
   "Contact": {
