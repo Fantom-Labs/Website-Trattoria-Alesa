@@ -2,6 +2,7 @@ import "../globals.css";
 
 import { WhatsAppFloater } from "@/components/links/WhatsAppFloater";
 import { SiteFooter } from "@/components/nav/SiteFooter";
+import { SiteFooterMenuGate } from "@/components/nav/SiteFooterMenuGate";
 import { SiteHeader } from "@/components/nav/SiteHeader";
 import { IntroSplash } from "@/components/splash/IntroSplash";
 import { HeaderThemeBridge } from "@/hooks/useHeaderTheme";
@@ -77,7 +78,9 @@ export default async function LocaleLayout({ children, params }: Props) {
               {children}
             </main>
           </HeaderThemeBridge>
-          <SiteFooter />
+          <SiteFooterMenuGate>
+            <SiteFooter />
+          </SiteFooterMenuGate>
           <WhatsAppFloater />
         </NextIntlClientProvider>
       </body>

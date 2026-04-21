@@ -9,7 +9,7 @@ export default async function MenuPage() {
 
   return (
     <div
-      className="-mt-16 flex min-h-dvh flex-1 flex-col bg-dark-slate pt-16 text-cream lg:-mt-[5.5rem] lg:pt-[5.5rem]"
+      className="-mt-16 flex min-h-0 flex-1 flex-col overflow-hidden bg-dark-slate pt-16 text-cream lg:-mt-[5.5rem] lg:pt-[5.5rem]"
       data-header-theme="light"
     >
       <h1 className="sr-only">{t("title")}</h1>
