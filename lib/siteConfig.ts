@@ -1,5 +1,5 @@
-/** Fixed chat button (always this number, independent of env prefill). */
-export const WHATSAPP_FLOATER_HREF = "https://wa.me/491785606754";
+/** Used by `buildWhatsAppUrl` when `NEXT_PUBLIC_WHATSAPP_E164` is unset (matches legacy floater default). */
+const WHATSAPP_E164_FALLBACK = "491785606754";
 
 function cleanDigits(value: string | undefined) {
   if (!value) return "";
@@ -38,9 +38,8 @@ export function getMenuDrivePdfEmbed() {
 }
 
 export function buildWhatsAppUrl(prefilledMessage: string) {
-  const e164 = getWhatsAppE164();
-  if (!e164) return "#";
-  const text = encodeURIComponent(prefilledMessage);
+  const e164 = getWhatsAppE164() || WHATSAPP_E164_FALLBACK;
+  const text = encodeURIComponent(prefilledMessage.trim());
   return `https://wa.me/${e164}?text=${text}`;
 }
 

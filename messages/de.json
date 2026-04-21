@@ -146,10 +146,12 @@
   },
   "Reservations": {
     "title": "Reservierungen",
+    "headlineLine1": "BUCHEN",
+    "headlineLine2": "PER WHATSAPP",
     "body": "Schicken Sie uns eine WhatsApp mit Wunschtag, Uhrzeit und Personenzahl. Wir bestätigen persönlich — ohne Formular, ohne Umwege.",
     "button": "WhatsApp schreiben",
     "secondary": "Lieber telefonieren? Alle Zahlen finden Sie auf der Kontaktseite.",
     "contactLink": "Kontaktdaten",
-    "whatsappPrefill": "Guten Tag, ich möchte gerne einen Tisch reservieren."
+    "whatsappPrefill": "Hallo, ich möchte gerne einen Tisch reservieren."
   }
 }

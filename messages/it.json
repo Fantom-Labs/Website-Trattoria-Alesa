@@ -146,10 +146,12 @@
   },
   "Reservations": {
     "title": "Prenotazioni",
+    "headlineLine1": "PRENOTA",
+    "headlineLine2": "SU WHATSAPP",
     "body": "Mandaci un WhatsApp con data, orario e numero di persone. Confermiamo a mano — niente moduli, niente giri strani.",
     "button": "Scrivici su WhatsApp",
     "secondary": "Preferisci chiamare? Trovi tutto nella pagina contatti.",
     "contactLink": "Dettagli contatto",
-    "whatsappPrefill": "Buongiorno, vorrei prenotare un tavolo."
+    "whatsappPrefill": "Ciao, vorrei prenotare un tavolo."
   }
 }

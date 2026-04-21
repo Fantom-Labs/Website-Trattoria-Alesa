@@ -14,21 +14,23 @@ export default async function AboutPage() {
 
   return (
     <>
-      <HeroSection
-        media={
-          <div className="relative h-full min-h-full w-full">
-            <Image
-              src="/images/img-1.png"
-              alt={t("hero.mediaAlt")}
-              fill
-              sizes="(max-width: 1023px) max(100vw, 100vh), 100vw"
-              quality={90}
-              className="object-cover"
-              priority
-            />
-          </div>
-        }
-      />
+      <div className="hidden lg:block">
+        <HeroSection
+          media={
+            <div className="relative h-full min-h-full w-full">
+              <Image
+                src="/images/img-1.png"
+                alt={t("hero.mediaAlt")}
+                fill
+                sizes="100vw"
+                quality={90}
+                className="object-cover"
+                priority
+              />
+            </div>
+          }
+        />
+      </div>
 
       <AboutSplitIntro
         heading={t("split.heading")}

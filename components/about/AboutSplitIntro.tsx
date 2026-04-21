@@ -26,7 +26,7 @@ export type AboutSplitIntroProps = {
  */
 export function AboutSplitIntro({ heading, body, imageAlt }: AboutSplitIntroProps) {
   return (
-    <section className="relative mt-10 sm:mt-12 lg:mt-16" data-header-theme="brown">
+    <section className="relative max-lg:mt-0 lg:mt-16" data-header-theme="brown">
       <div className="grid min-h-0 grid-cols-1 lg:grid-cols-2 lg:min-h-[min(90dvh,52rem)]">
         <div className="order-2 flex flex-col justify-center bg-[#F5F5F5] px-6 pb-14 max-lg:pt-28 sm:px-10 sm:pb-20 lg:order-1 lg:px-14 lg:py-24 xl:px-20">
           <h2 className="text-sm font-bold uppercase tracking-[0.18em] text-dark-slate sm:text-[15px]">
