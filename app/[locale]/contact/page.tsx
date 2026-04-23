@@ -16,7 +16,7 @@ export default async function ContactPage() {
         media={
           <div className="relative h-full min-h-full w-full">
             <Image
-              src="/images/img-1.png"
+              src="/images/img-11.png"
               alt={tAbout("hero.mediaAlt")}
               fill
               sizes="(max-width: 1023px) max(100vw, 100vh), 100vw"
