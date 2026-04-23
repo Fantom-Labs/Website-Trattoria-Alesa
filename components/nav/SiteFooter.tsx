@@ -20,7 +20,7 @@ export async function SiteFooter() {
           <p className="text-sm font-semibold uppercase tracking-wider text-cream/60">
             {t("visit")}
           </p>
-          <p className="text-sm leading-relaxed text-cream/85">{t("address")}</p>
+          <p className="whitespace-pre-line text-sm leading-relaxed text-cream/85">{t("address")}</p>
         </div>
         <div className="min-w-0 space-y-3">
           <p className="text-sm font-semibold uppercase tracking-wider text-cream/60">
