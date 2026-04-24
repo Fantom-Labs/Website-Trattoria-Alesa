@@ -10,9 +10,17 @@ export function getWhatsAppE164() {
   return cleanDigits(process.env.NEXT_PUBLIC_WHATSAPP_E164);
 }
 
+const INSTAGRAM_URL_DEFAULT = "https://www.instagram.com/trattoria.alesa/";
+const TIKTOK_URL_DEFAULT = "https://www.tiktok.com/@trattoriaalesa";
+
 export function getInstagramUrl() {
   const url = process.env.NEXT_PUBLIC_INSTAGRAM_URL?.trim();
-  return url && url.length > 0 ? url : "";
+  return url && url.length > 0 ? url : INSTAGRAM_URL_DEFAULT;
+}
+
+export function getTikTokUrl() {
+  const url = process.env.NEXT_PUBLIC_TIKTOK_URL?.trim();
+  return url && url.length > 0 ? url : TIKTOK_URL_DEFAULT;
 }
 
 const DRIVE_FILE_ID_IN_PATH = /\/file\/d\/([a-zA-Z0-9_-]+)/;

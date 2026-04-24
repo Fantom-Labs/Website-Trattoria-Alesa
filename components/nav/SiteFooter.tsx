@@ -1,12 +1,14 @@
 import { SectionContainer } from "@/components/layout/SectionContainer";
 import { InstagramIcon } from "@/components/icons/Instagram";
+import { TikTokIcon } from "@/components/icons/TikTok";
 import { Link } from "@/i18n/navigation";
-import { getInstagramUrl } from "@/lib/siteConfig";
+import { getInstagramUrl, getTikTokUrl } from "@/lib/siteConfig";
 import { getTranslations } from "next-intl/server";
 
 export async function SiteFooter() {
   const t = await getTranslations("Footer");
   const ig = getInstagramUrl();
+  const tt = getTikTokUrl();
   const year = new Date().getFullYear();
 
   return (
@@ -41,16 +43,31 @@ export async function SiteFooter() {
             <Link href="/reservations" className="w-fit underline-offset-4 hover:underline">
               {t("reserveLink")}
             </Link>
-            {ig ? (
-              <a
-                href={ig}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 underline-offset-4 hover:underline"
-              >
-                <InstagramIcon className="shrink-0" />
-                {t("instagram")}
-              </a>
+            {ig || tt ? (
+              <div className="flex flex-row items-center justify-start gap-2">
+                {ig ? (
+                  <a
+                    href={ig}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={t("instagram")}
+                    className="inline-flex shrink-0 text-cream/80 transition-colors hover:text-cream"
+                  >
+                    <InstagramIcon className="shrink-0" />
+                  </a>
+                ) : null}
+                {tt ? (
+                  <a
+                    href={tt}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={t("tiktok")}
+                    className="inline-flex shrink-0 text-cream/80 transition-colors hover:text-cream"
+                  >
+                    <TikTokIcon className="shrink-0" />
+                  </a>
+                ) : null}
+              </div>
             ) : null}
           </div>
         </div>
