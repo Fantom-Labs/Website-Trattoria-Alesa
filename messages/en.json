@@ -124,6 +124,9 @@
   "Menu": {
     "title": "Menu",
     "pdfFrameTitle": "Menu PDF",
+    "pdfFrameTitleOrders": "Takeaway orders menu PDF",
+    "menuTabMain": "Restaurant menu",
+    "menuTabTakeaway": "Takeaway orders",
     "openInNewTab": "Open in new tab",
     "pdfMissing": "The menu PDF is not linked yet. Please check back soon."
   },

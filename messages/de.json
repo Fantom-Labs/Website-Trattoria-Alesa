@@ -124,6 +124,9 @@
   "Menu": {
     "title": "Speisekarte",
     "pdfFrameTitle": "Speisekarte (PDF)",
+    "pdfFrameTitleOrders": "PDF Speisekarte zum Mitnehmen / Bestellen",
+    "menuTabMain": "Im Restaurant",
+    "menuTabTakeaway": "Zum Mitnehmen",
     "openInNewTab": "In neuem Tab öffnen",
     "pdfMissing": "Das Menü-PDF ist noch nicht verknüpft. Bitte schauen Sie später wieder vorbei."
   },

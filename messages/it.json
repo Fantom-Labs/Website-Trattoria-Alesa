@@ -124,6 +124,9 @@
   "Menu": {
     "title": "Menu",
     "pdfFrameTitle": "Menu PDF",
+    "pdfFrameTitleOrders": "PDF menu ordini da asporto",
+    "menuTabMain": "Menu in sala",
+    "menuTabTakeaway": "Menu da asporto",
     "openInNewTab": "Apri in nuova scheda",
     "pdfMissing": "Il PDF del menu non è ancora collegato. Torna a trovarci tra poco."
   },

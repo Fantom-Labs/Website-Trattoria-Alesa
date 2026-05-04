@@ -45,6 +45,16 @@ export function getMenuDrivePdfEmbed() {
   };
 }
 
+/** Second menu PDF (e.g. takeaway / orders). Same sharing rules as the main menu. */
+export function getMenuOrderDrivePdfEmbed() {
+  const id = resolveGoogleDriveFileId(process.env.NEXT_PUBLIC_MENU_ORDER_DRIVE_FILE_ID);
+  if (!id) return null;
+  return {
+    previewUrl: `https://drive.google.com/file/d/${id}/preview`,
+    viewUrl: `https://drive.google.com/file/d/${id}/view`,
+  };
+}
+
 export function buildWhatsAppUrl(prefilledMessage: string) {
   const e164 = getWhatsAppE164() || WHATSAPP_E164_FALLBACK;
   const text = encodeURIComponent(prefilledMessage.trim());

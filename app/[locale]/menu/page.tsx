@@ -1,11 +1,12 @@
 import { MenuPdfEmbed } from "@/components/menu/MenuPdfEmbed";
 import { SectionContainer } from "@/components/layout/SectionContainer";
 import { getTranslations } from "next-intl/server";
-import { getMenuDrivePdfEmbed } from "@/lib/siteConfig";
+import { getMenuDrivePdfEmbed, getMenuOrderDrivePdfEmbed } from "@/lib/siteConfig";
 
 export default async function MenuPage() {
   const t = await getTranslations("Menu");
   const driveMenu = getMenuDrivePdfEmbed();
+  const driveOrderMenu = getMenuOrderDrivePdfEmbed();
 
   return (
     <div
@@ -15,11 +16,7 @@ export default async function MenuPage() {
       <h1 className="sr-only">{t("title")}</h1>
 
       {driveMenu ? (
-        <MenuPdfEmbed
-          variant="full"
-          previewUrl={driveMenu.previewUrl}
-          viewUrl={driveMenu.viewUrl}
-        />
+        <MenuPdfEmbed variant="full" main={driveMenu} order={driveOrderMenu} />
       ) : (
         <SectionContainer className="flex flex-1 flex-col justify-center py-12 text-center">
           <p className="mx-auto max-w-prose text-base leading-relaxed text-warm-brown">

@@ -4,9 +4,10 @@
 #   - NEXT_PUBLIC_* values are inlined at build time; after changing them, trigger a new deploy
 #     ("Clear cache and deploy" if the menu PDF still does not update).
 #
-# Menu PDF (Google Drive):
-#   Key:   NEXT_PUBLIC_MENU_DRIVE_FILE_ID
-#   Value: file id only, or full share URL (…/file/d/FILE_ID/…). PDF must be "Anyone with the link" (Viewer).
+# Menu PDFs (Google Drive):
+#   NEXT_PUBLIC_MENU_DRIVE_FILE_ID — main menu (required for /menu PDF embed).
+#   NEXT_PUBLIC_MENU_ORDER_DRIVE_FILE_ID — optional second menu (e.g. takeaway); same link rules.
+#   Value: file id only, or full share URL. PDF must be "Anyone with the link" (Viewer).
 #
 # Optional: NEXT_PUBLIC_WHATSAPP_E164, NEXT_PUBLIC_INSTAGRAM_URL (see .env.example).
 
