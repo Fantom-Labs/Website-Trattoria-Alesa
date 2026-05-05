@@ -128,6 +128,7 @@
     "menuTabMain": "Menu in sala",
     "menuTabTakeaway": "Menu da asporto",
     "openInNewTab": "Apri in nuova scheda",
+    "loadingPdf": "Caricamento menu in corso...",
     "pdfMissing": "Il PDF del menu non è ancora collegato. Torna a trovarci tra poco."
   },
   "Contact": {
@@ -160,3 +161,4 @@
     "whatsappPrefill": "Ciao, vorrei prenotare un tavolo."
   }
 }
+

@@ -128,6 +128,7 @@
     "menuTabMain": "Restaurant menu",
     "menuTabTakeaway": "Takeaway orders",
     "openInNewTab": "Open in new tab",
+    "loadingPdf": "Loading menu...",
     "pdfMissing": "The menu PDF is not linked yet. Please check back soon."
   },
   "Contact": {
@@ -160,3 +161,4 @@
     "whatsappPrefill": "Hello, I would like to reserve a table."
   }
 }
+
