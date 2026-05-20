@@ -27,7 +27,7 @@ export const easeGalleryImage = [0.18, 0.82, 0.32, 1] as const;
 export const motion = {
   micro: 0.2,
   standard: 0.6,
-  highlight: 1.2,
+  highlight: 2,
   narrative: 1.5,
   /** Word-by-word headline rhythm */
   revealTextStagger: 0.02,
@@ -37,7 +37,7 @@ export const motion = {
   /** Scroll-triggered blocks: slight deferral so layout settles */
   scrollRevealDelay: 0.14,
   /** Zoom das imagens da galeria (experience + highlight) — mais longo = mais suave */
-  galleryImageRevealDuration: 1.55,
+  galleryImageRevealDuration: 2,
   /** Zoom inicial ≈ 1/1.16 (~14%); antes ~1/1.4 (~40%) */
   galleryImageScaleStart: 1 / 1.16,
   /** Atraso antes do zoom após entrar em vista */
