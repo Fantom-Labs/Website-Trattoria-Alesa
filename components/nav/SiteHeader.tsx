@@ -77,7 +77,7 @@ export function SiteHeader() {
       <header
         data-site-header
         className={cn(
-          "fixed inset-x-0 top-0 z-50 border-b transition-[background-color,border-color,color,backdrop-filter] duration-200 ease-out",
+          "border-b transition-[background-color,border-color,color,backdrop-filter] duration-200 ease-out",
           onDarkSection
             ? "border-white/15 bg-black/40 text-white backdrop-blur-md backdrop-saturate-150"
             : "border-stone-200 bg-white text-[#333333]",

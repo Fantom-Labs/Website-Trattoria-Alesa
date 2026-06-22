@@ -10,3 +10,6 @@ export const ENABLE_ABOUT_EXPERIENCE_SECTION = false;
 
 /** Secção de reviews / depoimentos na página About. */
 export const ENABLE_ABOUT_TESTIMONIAL_SECTION = false;
+
+/** Faixa de aviso de férias de agosto — remover após 21.08. */
+export const ENABLE_VACATION_BANNER = true;

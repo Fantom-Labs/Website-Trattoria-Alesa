@@ -159,6 +159,9 @@
     "secondary": "Prefer to call? Visit our contact page.",
     "contactLink": "Contact details",
     "whatsappPrefill": "Hello, I would like to reserve a table."
+  },
+  "VacationBanner": {
+    "message": "Dear guests, from 3 August to 20 August inclusive, we will be on our summer break. From 21 August we will be back, looking forward to welcoming you again with our Italian specialities."
   }
 }
 

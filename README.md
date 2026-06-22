@@ -60,6 +60,23 @@ npm run lint
   - `ENABLE_HOME_SCROLL_ASSIST` (atual: `false`)
   - `ENABLE_ABOUT_EXPERIENCE_SECTION` (atual: `false`)
   - `ENABLE_ABOUT_TESTIMONIAL_SECTION` (atual: `false`)
+  - `ENABLE_VACATION_BANNER` (atual: `true`) — faixa de aviso de ferias de agosto
+
+## Faixa de ferias (VacationBanner)
+
+Faixa fixa no topo do site (acima do menu) avisando sobre o Betriebsurlaub de agosto.
+
+- Componente: `components/layout/VacationBanner.tsx`
+- Textos: namespace `VacationBanner` em `messages/de.json`, `en.json`, `it.json`
+- A bandeira italiana e renderizada como SVG inline (emoji 🇮🇹 nao funciona no Windows)
+
+**Para desativar apos 20/08:** altere para `false` em `lib/featureFlags.ts`:
+
+```ts
+export const ENABLE_VACATION_BANNER = false;
+```
+
+Nenhuma outra alteracao e necessaria.
 
 ## Variaveis de ambiente usadas
 

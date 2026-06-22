@@ -159,6 +159,9 @@
     "secondary": "Preferisci chiamare? Trovi tutto nella pagina contatti.",
     "contactLink": "Dettagli contatto",
     "whatsappPrefill": "Ciao, vorrei prenotare un tavolo."
+  },
+  "VacationBanner": {
+    "message": "Cari ospiti, dal 3 al 20 agosto compreso saremo in vacanza. Dal 21 agosto saremo di nuovo da voi e non vediamo l'ora di coccolarvi con le nostre specialità italiane."
   }
 }
 

@@ -1,5 +1,6 @@
 import "../globals.css";
 
+import { VacationBanner } from "@/components/layout/VacationBanner";
 import { WhatsAppFloater } from "@/components/links/WhatsAppFloater";
 import { SiteFooter } from "@/components/nav/SiteFooter";
 import { SiteFooterMenuGate } from "@/components/nav/SiteFooterMenuGate";
@@ -7,6 +8,7 @@ import { SiteHeader } from "@/components/nav/SiteHeader";
 import { IntroSplash } from "@/components/splash/IntroSplash";
 import { HeaderThemeBridge } from "@/hooks/useHeaderTheme";
 import { routing } from "@/i18n/routing";
+import { ENABLE_VACATION_BANNER } from "@/lib/featureFlags";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages, getTranslations, setRequestLocale } from "next-intl/server";
 import { DM_Sans } from "next/font/google";
@@ -52,6 +54,9 @@ export default async function LocaleLayout({ children, params }: Props) {
   setRequestLocale(locale);
   const messages = await getMessages();
   const tSkip = await getTranslations({ locale, namespace: "Skip" });
+  const tBanner = ENABLE_VACATION_BANNER
+    ? await getTranslations({ locale, namespace: "VacationBanner" })
+    : null;
 
   return (
     <html
@@ -64,7 +69,10 @@ export default async function LocaleLayout({ children, params }: Props) {
         <NextIntlClientProvider messages={messages}>
           <IntroSplash />
           <HeaderThemeBridge>
-            <SiteHeader />
+            <div className="sticky top-0 z-50">
+              {tBanner && <VacationBanner message={tBanner("message")} />}
+              <SiteHeader />
+            </div>
             <a
               href="#main-content"
               className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-[100] focus:rounded-sm focus:bg-cream focus:px-4 focus:py-2 focus:text-dark-slate"
@@ -73,7 +81,7 @@ export default async function LocaleLayout({ children, params }: Props) {
             </a>
             <main
               id="main-content"
-              className="flex min-h-0 flex-1 flex-col pt-16 lg:pt-[5.5rem]"
+              className="flex min-h-0 flex-1 flex-col"
             >
               {children}
             </main>
