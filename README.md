@@ -25,6 +25,7 @@ npm run lint
 ## Estrutura principal
 
 - `app/`
+  - `app/layout.tsx`: layout raiz (html/body, fonte global)
   - `app/[locale]/layout.tsx`: layout localizado (provider i18n, header/footer, splash)
   - `app/[locale]/page.tsx`: home
   - `app/[locale]/about/page.tsx`
@@ -32,11 +33,13 @@ npm run lint
   - `app/[locale]/contact/page.tsx`
   - `app/[locale]/reservations/page.tsx`
   - `app/[locale]/not-found.tsx`
-- `components/`: componentes por dominio (`home`, `nav`, `menu`, `contact`, `reveal`, `layout`, etc.)
+- `components/`: componentes por dominio (`home`, `nav`, `menu`, `contact`, `about`, `reveal`, `layout`, `editorial`, `icons`, `links`, `splash`, `ui`)
+- `hooks/`: hooks reutilizaveis (`useHeaderTheme`, `useInViewOnce`, `useScrollAssist`)
 - `i18n/`: roteamento e carga de mensagens
 - `messages/`: traducoes em JSON
-- `lib/`: feature flags, tokens e configs de links/env
+- `lib/`: feature flags, tokens, siteConfig (env/fallbacks), brandContext, localeDisplay, scrollReferenceTheme, utils
 - `public/`: imagens e videos estaticos
+- `netlify.toml`: configuracao de deploy no Netlify
 
 ## Internacionalizacao (i18n)
 
