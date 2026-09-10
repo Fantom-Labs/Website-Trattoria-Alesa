@@ -15,7 +15,7 @@ export const ENABLE_ABOUT_TESTIMONIAL_SECTION = false;
 export const ENABLE_VACATION_BANNER = false;
 
 /**
- * Faixa "primeiro dia de aula" (apenas locale "de", ver `app/[locale]/layout.tsx`).
+ * Faixa "primeiro dia de aula" (locales "de" e "it", ver `app/[locale]/layout.tsx`).
  * Desativa-se sozinha a partir desta data — não é preciso mexer aqui depois.
  */
 const SCHOOL_BANNER_END_DATE = "2026-09-15";

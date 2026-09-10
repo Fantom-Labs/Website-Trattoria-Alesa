@@ -1,5 +1,6 @@
 import "../globals.css";
 
+import { ItalyFlag } from "@/components/layout/ItalyFlag";
 import { SchoolBanner } from "@/components/layout/SchoolBanner";
 import { VacationBanner } from "@/components/layout/VacationBanner";
 import { WhatsAppFloater } from "@/components/links/WhatsAppFloater";
@@ -59,7 +60,7 @@ export default async function LocaleLayout({ children, params }: Props) {
     ? await getTranslations({ locale, namespace: "VacationBanner" })
     : null;
   const tSchoolBanner =
-    locale === "de" && isSchoolBannerActive()
+    (locale === "de" || locale === "it") && isSchoolBannerActive()
       ? await getTranslations({ locale, namespace: "SchoolBanner" })
       : null;
 
@@ -76,7 +77,13 @@ export default async function LocaleLayout({ children, params }: Props) {
           <HeaderThemeBridge>
             <div className="sticky top-0 z-50">
               {tBanner && <VacationBanner message={tBanner("message")} />}
-              {tSchoolBanner && <SchoolBanner message={tSchoolBanner("message")} />}
+              {tSchoolBanner && (
+                <SchoolBanner
+                  message={tSchoolBanner.rich("message", {
+                    flag: () => <ItalyFlag />,
+                  })}
+                />
+              )}
               <SiteHeader />
             </div>
             <a
