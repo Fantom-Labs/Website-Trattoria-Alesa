@@ -1,5 +1,6 @@
 import "../globals.css";
 
+import { SchoolBanner } from "@/components/layout/SchoolBanner";
 import { VacationBanner } from "@/components/layout/VacationBanner";
 import { WhatsAppFloater } from "@/components/links/WhatsAppFloater";
 import { SiteFooter } from "@/components/nav/SiteFooter";
@@ -8,7 +9,7 @@ import { SiteHeader } from "@/components/nav/SiteHeader";
 import { IntroSplash } from "@/components/splash/IntroSplash";
 import { HeaderThemeBridge } from "@/hooks/useHeaderTheme";
 import { routing } from "@/i18n/routing";
-import { ENABLE_VACATION_BANNER } from "@/lib/featureFlags";
+import { ENABLE_VACATION_BANNER, isSchoolBannerActive } from "@/lib/featureFlags";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages, getTranslations, setRequestLocale } from "next-intl/server";
 import { DM_Sans } from "next/font/google";
@@ -57,6 +58,10 @@ export default async function LocaleLayout({ children, params }: Props) {
   const tBanner = ENABLE_VACATION_BANNER
     ? await getTranslations({ locale, namespace: "VacationBanner" })
     : null;
+  const tSchoolBanner =
+    locale === "de" && isSchoolBannerActive()
+      ? await getTranslations({ locale, namespace: "SchoolBanner" })
+      : null;
 
   return (
     <html
@@ -71,6 +76,7 @@ export default async function LocaleLayout({ children, params }: Props) {
           <HeaderThemeBridge>
             <div className="sticky top-0 z-50">
               {tBanner && <VacationBanner message={tBanner("message")} />}
+              {tSchoolBanner && <SchoolBanner message={tSchoolBanner("message")} />}
               <SiteHeader />
             </div>
             <a

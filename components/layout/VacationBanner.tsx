@@ -1,3 +1,5 @@
+import { AnnouncementBanner } from "@/components/layout/AnnouncementBanner";
+
 function ItalyFlag() {
   return (
     <svg
@@ -18,12 +20,8 @@ function ItalyFlag() {
 
 export function VacationBanner({ message }: { message: string }) {
   return (
-    <div
-      role="status"
-      aria-live="polite"
-      className="w-full bg-dark-slate px-4 py-2.5 text-center text-xs leading-relaxed text-cream sm:text-sm"
-    >
+    <AnnouncementBanner>
       {message} <ItalyFlag /> ❤️
-    </div>
+    </AnnouncementBanner>
   );
 }

@@ -13,3 +13,16 @@ export const ENABLE_ABOUT_TESTIMONIAL_SECTION = false;
 
 /** Faixa de aviso de férias de agosto — remover após 21.08. */
 export const ENABLE_VACATION_BANNER = false;
+
+/**
+ * Faixa "primeiro dia de aula" (apenas locale "de", ver `app/[locale]/layout.tsx`).
+ * Desativa-se sozinha a partir desta data — não é preciso mexer aqui depois.
+ */
+const SCHOOL_BANNER_END_DATE = "2026-09-15";
+
+export function isSchoolBannerActive(): boolean {
+  const todayInRome = new Intl.DateTimeFormat("en-CA", {
+    timeZone: "Europe/Rome",
+  }).format(new Date());
+  return todayInRome < SCHOOL_BANNER_END_DATE;
+}
